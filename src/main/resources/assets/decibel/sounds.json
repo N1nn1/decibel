@@ -211,6 +211,78 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.sapling.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/sapling/break1",
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break2",
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break3",
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break4",
+                "volume": 0.5
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.sapling.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.sapling.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.sapling.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.sapling.step": {
+        "sounds": [
+            {
+                "name": "decibel:block/sapling/step1",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step2",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step3",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step4",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step5",
+                "volume": 0.75
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.glass.break": {
         "sounds": [
             {

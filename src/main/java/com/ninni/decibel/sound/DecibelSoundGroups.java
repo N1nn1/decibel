@@ -16,6 +16,7 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup COARSE_DIRT = register("coarse_dirt", 1, 1);
     public static final BlockSoundGroup DIRT = register("dirt", 1, 1);
     public static final BlockSoundGroup GENERIC_LEAVES = register("generic_leaves", 1, 1);
+    public static final BlockSoundGroup SAPLING = register("sapling", 1, 1);
     public static final BlockSoundGroup GLASS = register("glass", 1, 1);
     public static final BlockSoundGroup GRASS_BLOCK = register("grass_block", 1, 1);
     public static final BlockSoundGroup SMALL_PLANT = register("small_plant", 1, 1);

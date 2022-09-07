@@ -16,6 +16,10 @@ public class BlockSoundModifications {
         return addBlock(block, DecibelSoundGroups.GENERIC_LEAVES);
     }
 
+    static BlockSoundGroup addSapling(Block block) {
+        return addBlock(block, DecibelSoundGroups.SAPLING);
+    }
+
     static BlockSoundGroup addBlock(Block block, BlockSoundGroup soundGroup) {
         SOUND_GROUP_MAP.put(block, soundGroup);
         return soundGroup;
@@ -59,6 +63,14 @@ public class BlockSoundModifications {
 
         addBlock(Blocks.GOLD_BLOCK, DecibelSoundGroups.METAL);
         addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
+
+        addSapling(Blocks.ACACIA_SAPLING);
+        addSapling(Blocks.BIRCH_SAPLING);
+        addSapling(Blocks.DARK_OAK_SAPLING);
+        addSapling(Blocks.JUNGLE_SAPLING);
+        addSapling(Blocks.MANGROVE_PROPAGULE);
+        addSapling(Blocks.OAK_SAPLING);
+        addSapling(Blocks.SPRUCE_SAPLING);
 
         addLeaves(Blocks.ACACIA_LEAVES);
         addLeaves(Blocks.BIRCH_LEAVES);
