@@ -21,6 +21,7 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup GRASS_BLOCK = register("grass_block", 1, 1);
     public static final BlockSoundGroup SMALL_PLANT = register("small_plant", 1, 1);
     public static final BlockSoundGroup LARGE_PLANT = register("large_plant", 1, 1);
+    public static final BlockSoundGroup COBWEB = register("cobweb", 1, 1);
     public static final BlockSoundGroup GRAVEL = register("gravel", 1, 1);
     public static final BlockSoundGroup METAL = register("metal", 1, 1);
 

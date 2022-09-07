@@ -61,6 +61,8 @@ public class BlockSoundModifications {
         addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
         addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);
 
+        addBlock(Blocks.COBWEB, DecibelSoundGroups.COBWEB);
+
         addBlock(Blocks.GOLD_BLOCK, DecibelSoundGroups.METAL);
         addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
 

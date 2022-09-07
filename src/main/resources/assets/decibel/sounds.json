@@ -666,6 +666,60 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.cobweb.break": {
+        "sounds": [
+            "decibel:block/cobweb/break1",
+            "decibel:block/cobweb/break2",
+            "decibel:block/cobweb/break3",
+            "decibel:block/cobweb/break4"
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.cobweb.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.cobweb.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.cobweb.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.cobweb.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.cobweb.place": {
+        "sounds": [
+            "decibel:block/cobweb/place1",
+            "decibel:block/cobweb/place2"
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.cobweb.step": {
+        "sounds": [
+            {
+                "name": "decibel:block/cobweb/step1",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/cobweb/step2",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/cobweb/step3",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/cobweb/step4",
+                "volume": 0.75
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.soul_fire.ambient": {
         "sounds": [
             "fire/fire"
