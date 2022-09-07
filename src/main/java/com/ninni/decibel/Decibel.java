@@ -1,16 +1,20 @@
 package com.ninni.decibel;
 
+import com.ninni.decibel.sound.BlockSoundModifications;
+
 import net.fabricmc.api.ModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.minecraft.util.Identifier;
 
 public class Decibel implements ModInitializer {
 
-/*
-List of sounds changed:
-- All leaves use the new Azalea leaves sounds
-*/
+	public static final String MOD_ID = "decibel";
+
+	public static Identifier id(String path) {
+		return new Identifier(MOD_ID, path);
+	}
 
 	@Override
-	public void onInitialize() {}
+	public void onInitialize() {
+		BlockSoundModifications.init();
+	}
 }

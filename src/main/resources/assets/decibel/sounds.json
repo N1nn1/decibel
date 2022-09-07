@@ -1,0 +1,414 @@
+{
+    "block.clay.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.mud.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.clay.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.mud.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.clay.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.mud.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.clay.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.mud.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.clay.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.mud.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.coarse_dirt.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.coarse_dirt.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.coarse_dirt.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.coarse_dirt.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.coarse_dirt.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.dirt.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.dirt.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.dirt.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.dirt.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.dirt.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.generic_leaves.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.azalea_leaves.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.generic_leaves.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.azalea_leaves.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.generic_leaves.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.azalea_leaves.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.generic_leaves.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.azalea_leaves.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.generic_leaves.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.azalea_leaves.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.glass.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.glass.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.glass.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.glass.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.glass.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.glass.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.glass.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.glass.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.glass.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.glass.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.grass_block.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.grass_block.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.grass_block.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.grass_block.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.grass_block.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.grass_plant.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.grass.break",
+                "pitch": 1.6,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.grass_plant.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.grass.fall",
+                "pitch": 1.6,
+                "type": "event",
+                "volume": 0.4
+            }
+        ]
+    },
+    "block.grass_plant.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.grass.hit",
+                "pitch": 1.6,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.grass_plant.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.grass.place",
+                "pitch": 1.6,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.grass_plant.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.grass.step",
+                "pitch": 1.6,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.gravel.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.gravel.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.gravel.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.gravel.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.gravel.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.rooted_dirt.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.metal.break": {
+        "sounds": [
+            {
+                "name": "minecraft:block.metal.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.metal.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.metal.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.metal.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.metal.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.metal.place": {
+        "sounds": [
+            {
+                "name": "minecraft:block.metal.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.metal.step": {
+        "sounds": [
+            {
+                "name": "minecraft:block.metal.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.soul_fire.ambient": {
+        "sounds": [
+            "fire/fire"
+        ],
+        "subtitle": "subtitles.block.fire.ambient"
+    }
+}

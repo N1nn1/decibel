@@ -1,39 +1,44 @@
 {
-  "schemaVersion": 1,
-  "id": "decibel",
-  "version": "${version}",
-  "name": "Decibel",
-  "description": "A mod dedicated to improving Minecraft's old sounds!",
-  "authors": [
-    "Ninni"
-  ],
-  "contributors": [
-    "Orcinus"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/decibel",
-    "sources": "https://github.com/N1nn1/decibel",
-    "issues": "https://github.com/N1nn1/decibel/issues"
-  },
-  "custom": {
-    "modmenu": { "links": {
-      "mod.frozenup.contact.discord": "https://discord.moddingplayground.net",
-      "mod.frozenup.wiki": "https://github.com/N1nn1/decibel/wiki"
-    } }
-  },
-  "license": "MIT",
-  "icon": "assets/decibel/textures/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [ "com.ninni.decibel.Decibel" ],
-    "client": [ "com.ninni.decibel.DecibelClient" ],
-    "server": []
-  },
-  "mixins": [ "decibel.mixins.json" ],
-  "depends": {
-    "fabricloader": ">=0.14",
-    "fabric": "*",
-    "minecraft": ">=1.19",
-    "java": ">=17"
-  }
+	"schemaVersion": 1,
+	"id": "decibel",
+	"version": "${version}",
+	"name": "Decibel",
+	"description": "A mod dedicated to improving Minecraft's old sounds!",
+	"authors": [
+		"Ninni",
+		"bunten"
+	],
+	"contributors": [
+		"Orcinus"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/decibel",
+		"sources": "https://github.com/N1nn1/decibel",
+		"issues": "https://github.com/N1nn1/decibel/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"mod.decibel.discord": "https://discord.moddingplayground.net",
+				"mod.decibel.wiki": "https://github.com/N1nn1/decibel/wiki"
+			}
+		}
+	},
+	"license": "MIT",
+	"icon": "assets/decibel/textures/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ninni.decibel.Decibel"
+		]
+	},
+	"mixins": [
+		"decibel.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14",
+		"fabric": "*",
+		"minecraft": "~1.19",
+		"java": ">=17"
+	}
 }
