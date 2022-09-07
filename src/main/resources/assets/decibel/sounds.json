@@ -725,5 +725,13 @@
             "fire/fire"
         ],
         "subtitle": "subtitles.block.fire.ambient"
+    },
+    "item.apple.eat": {
+        "sounds": [
+            "decibel:item/apple/eat1",
+            "decibel:item/apple/eat2",
+            "decibel:item/apple/eat3"
+        ],
+        "subtitle": "subtitles.block.fire.ambient"
     }
 }

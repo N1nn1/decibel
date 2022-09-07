@@ -12,17 +12,16 @@ public class BlockSoundModifications {
 
     public static final Map<Block, BlockSoundGroup> SOUND_GROUP_MAP = Maps.newHashMap();
 
-    static BlockSoundGroup addLeaves(Block block) {
-        return addBlock(block, DecibelSoundGroups.GENERIC_LEAVES);
+    static void addLeaves(Block block) {
+        addBlock(block, DecibelSoundGroups.GENERIC_LEAVES);
     }
 
-    static BlockSoundGroup addSapling(Block block) {
-        return addBlock(block, DecibelSoundGroups.SAPLING);
+    static void addSapling(Block block) {
+        addBlock(block, DecibelSoundGroups.SAPLING);
     }
 
-    static BlockSoundGroup addBlock(Block block, BlockSoundGroup soundGroup) {
+    static void addBlock(Block block, BlockSoundGroup soundGroup) {
         SOUND_GROUP_MAP.put(block, soundGroup);
-        return soundGroup;
     }
 
     public static void init() {

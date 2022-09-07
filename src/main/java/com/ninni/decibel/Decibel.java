@@ -2,6 +2,7 @@ package com.ninni.decibel;
 
 import com.ninni.decibel.sound.BlockSoundModifications;
 
+import com.ninni.decibel.sound.ItemSoundModifications;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 
@@ -16,5 +17,6 @@ public class Decibel implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		BlockSoundModifications.init();
+		ItemSoundModifications.init();
 	}
 }
