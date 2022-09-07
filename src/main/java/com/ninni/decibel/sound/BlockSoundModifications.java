@@ -22,27 +22,50 @@ public class BlockSoundModifications {
     }
 
     public static void init() {
-        addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
+        addBlock(Blocks.GRASS, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.DEAD_BUSH, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.TALL_GRASS, DecibelSoundGroups.LARGE_PLANT);
+
+        addBlock(Blocks.ALLIUM, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.AZURE_BLUET, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.BLUE_ORCHID, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.CORNFLOWER, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.DANDELION, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.LILY_OF_THE_VALLEY, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.ORANGE_TULIP, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.OXEYE_DAISY, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.PINK_TULIP, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.POPPY, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.RED_TULIP, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.WHITE_TULIP, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.WITHER_ROSE, DecibelSoundGroups.SMALL_PLANT);
+
+        addBlock(Blocks.LILAC, DecibelSoundGroups.LARGE_PLANT);
+        addBlock(Blocks.PEONY, DecibelSoundGroups.LARGE_PLANT);
+        addBlock(Blocks.ROSE_BUSH, DecibelSoundGroups.LARGE_PLANT);
+        addBlock(Blocks.SUNFLOWER, DecibelSoundGroups.LARGE_PLANT);
+
+        addBlock(Blocks.FERN, DecibelSoundGroups.GENERIC_LEAVES);
+        addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.GENERIC_LEAVES);
+
+        addBlock(Blocks.GRASS_BLOCK, DecibelSoundGroups.GRASS_BLOCK);
         addBlock(Blocks.COARSE_DIRT, DecibelSoundGroups.COARSE_DIRT);
         addBlock(Blocks.DIRT, DecibelSoundGroups.DIRT);
         addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
+        addBlock(Blocks.PODZOL, DecibelSoundGroups.DIRT);
 
-        addBlock(Blocks.GRASS_BLOCK, DecibelSoundGroups.GRASS_BLOCK);
+        addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
         addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);
-        addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
+
         addBlock(Blocks.GOLD_BLOCK, DecibelSoundGroups.METAL);
+        addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
 
-        addBlock(Blocks.GRASS, DecibelSoundGroups.PLANT);
-        addBlock(Blocks.TALL_GRASS, DecibelSoundGroups.PLANT);
-        addBlock(Blocks.FERN, DecibelSoundGroups.PLANT);
-        addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.PLANT);
-
-        addLeaves(Blocks.OAK_LEAVES);
+        addLeaves(Blocks.ACACIA_LEAVES);
         addLeaves(Blocks.BIRCH_LEAVES);
+        addLeaves(Blocks.DARK_OAK_LEAVES);
         addLeaves(Blocks.JUNGLE_LEAVES);
         addLeaves(Blocks.MANGROVE_LEAVES);
+        addLeaves(Blocks.OAK_LEAVES);
         addLeaves(Blocks.SPRUCE_LEAVES);
-        addLeaves(Blocks.DARK_OAK_LEAVES);
-        addLeaves(Blocks.ACACIA_LEAVES);
     }
 }
