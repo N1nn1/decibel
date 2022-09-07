@@ -32,10 +32,10 @@ public class BlockSoundModifications {
         addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
         addBlock(Blocks.GOLD_BLOCK, DecibelSoundGroups.METAL);
 
-        addBlock(Blocks.GRASS, DecibelSoundGroups.GRASS_PLANT);
-        addBlock(Blocks.TALL_GRASS, DecibelSoundGroups.GRASS_PLANT);
-        addBlock(Blocks.FERN, DecibelSoundGroups.GRASS_PLANT);
-        addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.GRASS_PLANT);
+        addBlock(Blocks.GRASS, DecibelSoundGroups.PLANT);
+        addBlock(Blocks.TALL_GRASS, DecibelSoundGroups.PLANT);
+        addBlock(Blocks.FERN, DecibelSoundGroups.PLANT);
+        addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.PLANT);
 
         addLeaves(Blocks.OAK_LEAVES);
         addLeaves(Blocks.BIRCH_LEAVES);
