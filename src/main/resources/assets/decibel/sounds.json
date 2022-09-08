@@ -87,6 +87,74 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.cobweb.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/cobweb/break1",
+                "pitch": 1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/cobweb/break2",
+                "pitch": 1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/cobweb/break3",
+                "pitch": 1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/cobweb/break4",
+                "pitch": 1,
+                "volume": 0.5
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.cobweb.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.cobweb.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.cobweb.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.cobweb.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.cobweb.place": {
+        "sounds": [
+            {
+                "name": "decibel:block/cobweb/place1",
+                "pitch": 1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/cobweb/place2",
+                "pitch": 1,
+                "volume": 0.5
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.cobweb.step": {
+        "sounds": [
+            {
+                "name": "decibel:block.grass_block.step",
+                "pitch": 1.8,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.dirt.break": {
         "sounds": [
             {
@@ -206,82 +274,6 @@
             },
             {
                 "name": "decibel:block/generic_leaves/step5",
-                "volume": 0.75
-            }
-        ],
-        "subtitle": "subtitles.block.generic.footsteps"
-    },
-    "block.sapling.break": {
-        "sounds": [
-            {
-                "name": "decibel:block/sapling/break1",
-                "volume": 0.5,
-                "pitch": 1.2
-            },
-            {
-                "name": "decibel:block/sapling/break2",
-                "volume": 0.5,
-                "pitch": 1.2
-            },
-            {
-                "name": "decibel:block/sapling/break3",
-                "volume": 0.5,
-                "pitch": 1.2
-            },
-            {
-                "name": "decibel:block/sapling/break4",
-                "volume": 0.5,
-                "pitch": 1.2
-            }
-        ],
-        "subtitle": "subtitles.block.generic.break"
-    },
-    "block.sapling.fall": {
-        "sounds": [
-            {
-                "name": "decibel:block.sapling.break",
-                "type": "event"
-            }
-        ]
-    },
-    "block.sapling.hit": {
-        "sounds": [
-            {
-                "name": "decibel:block.sapling.step",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.hit"
-    },
-    "block.sapling.place": {
-        "sounds": [
-            {
-                "name": "decibel:block.sapling.break",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.place"
-    },
-    "block.sapling.step": {
-        "sounds": [
-            {
-                "name": "decibel:block/sapling/step1",
-                "volume": 0.75
-            },
-            {
-                "name": "decibel:block/sapling/step2",
-                "volume": 0.75
-            },
-            {
-                "name": "decibel:block/sapling/step3",
-                "volume": 0.75
-            },
-            {
-                "name": "decibel:block/sapling/step4",
-                "volume": 0.75
-            },
-            {
-                "name": "decibel:block/sapling/step5",
                 "volume": 0.75
             }
         ],
@@ -606,6 +598,82 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.sapling.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/sapling/break1",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break2",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break3",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:block/sapling/break4",
+                "pitch": 1.2,
+                "volume": 0.5
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.sapling.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.sapling.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.sapling.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.sapling.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.sapling.step": {
+        "sounds": [
+            {
+                "name": "decibel:block/sapling/step1",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step2",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step3",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step4",
+                "volume": 0.75
+            },
+            {
+                "name": "decibel:block/sapling/step5",
+                "volume": 0.75
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.small_plant.break": {
         "sounds": [
             {
@@ -676,88 +744,6 @@
                 "pitch": 1.2,
                 "type": "event",
                 "volume": 0.4
-            }
-        ],
-        "subtitle": "subtitles.block.generic.footsteps"
-    },
-    "block.cobweb.break": {
-        "sounds": [
-            {
-                "name": "decibel:block/cobweb/break1",
-                "pitch": 1.6,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:block/cobweb/break2",
-                "pitch": 1.6,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:block/cobweb/break3",
-                "pitch": 1.6,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:block/cobweb/break24",
-                "pitch": 1.6,
-                "volume": 0.3
-            }
-        ],
-        "subtitle": "subtitles.block.generic.break"
-    },
-    "block.cobweb.fall": {
-        "sounds": [
-            {
-                "name": "decibel:block.cobweb.break",
-                "type": "event"
-            }
-        ]
-    },
-    "block.cobweb.hit": {
-        "sounds": [
-            {
-                "name": "decibel:block.cobweb.step",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.hit"
-    },
-    "block.cobweb.place": {
-        "sounds": [
-            {
-                "name": "decibel:block/cobweb/place1",
-                "pitch": 1.6,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:block/cobweb/place2",
-                "pitch": 1.6,
-                "volume": 0.3
-            }
-        ],
-        "subtitle": "subtitles.block.generic.place"
-    },
-    "block.cobweb.step": {
-        "sounds": [
-            {
-                "name": "decibel:block/cobweb/step1",
-                "volume": 0.75,
-                "pitch": 1.6
-            },
-            {
-                "name": "decibel:block/cobweb/step2",
-                "volume": 0.75,
-                "pitch": 1.6
-            },
-            {
-                "name": "decibel:block/cobweb/step3",
-                "volume": 0.75,
-                "pitch": 1.6
-            },
-            {
-                "name": "decibel:block/cobweb/step4",
-                "volume": 0.75,
-                "pitch": 1.6
             }
         ],
         "subtitle": "subtitles.block.generic.footsteps"
