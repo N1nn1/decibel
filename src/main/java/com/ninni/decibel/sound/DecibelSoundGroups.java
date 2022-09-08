@@ -15,6 +15,7 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup CACTUS = register("cactus", 1, 1);
     public static final BlockSoundGroup CLAY = register("clay", 1, 1);
     public static final BlockSoundGroup COARSE_DIRT = register("coarse_dirt", 1, 1);
+    public static final BlockSoundGroup PODZOL = register("podzol", 1, 1);
     public static final BlockSoundGroup DIRT = register("dirt", 1, 1);
     public static final BlockSoundGroup FARMLAND = register("farmland", 1, 1);
     public static final BlockSoundGroup GENERIC_LEAVES = register("generic_leaves", 1, 1);
