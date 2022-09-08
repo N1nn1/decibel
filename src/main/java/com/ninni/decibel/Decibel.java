@@ -1,5 +1,6 @@
 package com.ninni.decibel;
 
+import com.ninni.decibel.sound.ArmorSoundModifications;
 import com.ninni.decibel.sound.BlockSoundModifications;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
@@ -18,5 +19,6 @@ public class Decibel implements ModInitializer {
 	public void onInitialize() {
 		BlockSoundModifications.init();
 		ItemSoundModifications.init();
+		ArmorSoundModifications.init();
 	}
 }

@@ -531,6 +531,62 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.podzol.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/podzol/break1",
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break2",
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break3",
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break4",
+                "volume": 0.6
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.podzol.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.podzol.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.podzol.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.podzol.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.podzol.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.podzol.step": {
+        "sounds": [
+            "decibel:block/podzol/step1",
+            "decibel:block/podzol/step2",
+            "decibel:block/podzol/step3",
+            "decibel:block/podzol/step4"
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.gravel.break": {
         "sounds": [
             {
@@ -1108,5 +1164,44 @@
             }
         ],
         "subtitle": "decibel.item.shield.use"
+    },
+    "armor.iron.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/iron/step1",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step2",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step3",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step4",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step5",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step6",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/iron/step7",
+                "pitch": 0.9,
+                "volume": 0.2
+            }
+        ]
     }
 }

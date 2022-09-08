@@ -19,8 +19,14 @@ public class DecibelSoundEvents {
     public static final SoundEvent ITEM_ENDER_PEARL_THROW = createItemSound("ender_pearl", "throw");
     public static final SoundEvent ITEM_GOLDEN_APPLE_EAT = createItemSound("golden_apple", "eat");
 
+    public static final SoundEvent ARMOR_IRON_STEP = createArmorSound("iron", "step");
+
     public static SoundEvent createItemSound(String item, String type) {
         Identifier identifier = new Identifier(MOD_ID, "item." + item + "." + type);
+        return Registry.register(Registry.SOUND_EVENT, identifier, new SoundEvent(identifier));
+    }
+    public static SoundEvent createArmorSound(String armor, String type) {
+        Identifier identifier = new Identifier(MOD_ID, "armor." + armor + "." + type);
         return Registry.register(Registry.SOUND_EVENT, identifier, new SoundEvent(identifier));
     }
 }
