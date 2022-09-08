@@ -921,7 +921,8 @@
                 "pitch": 0.9,
                 "volume": 0.8
             }
-        ]
+        ],
+        "subtitle": "subtitles.entity.arrow.shoot"
     },
     "item.bow.shoot_flame": {
         "sounds": [
@@ -940,21 +941,23 @@
                 "pitch": 0.9,
                 "volume": 0.92
             }
-        ]
+        ],
+        "subtitle": "subtitles.entity.arrow.shoot"
     },
     "item.ender_pearl.throw": {
         "sounds": [
             {
                 "name": "decibel:item/ender_pearl/throw1",
-                "pitch": 2.5,
-                "volume": 1.5
+                "pitch": 1,
+                "volume": 1
             },
             {
                 "name": "decibel:item/ender_pearl/throw2",
-                "pitch": 2.5,
-                "volume": 1.5
+                "pitch": 1,
+                "volume": 1
             }
-        ]
+        ],
+        "subtitle": "subtitles.entity.ender_pearl.throw"
     },
     "item.golden_apple.eat": {
         "sounds": [
