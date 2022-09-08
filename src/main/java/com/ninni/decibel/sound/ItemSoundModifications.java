@@ -13,7 +13,7 @@ import net.minecraft.sound.SoundEvent;
 public class ItemSoundModifications {
 
     public static final Map<Item, SoundEventFunction<ItemStack>> USING_MAP = Maps.newHashMap();
-    public static final Map<Item, SoundEvent> EATING_MAP = Maps.newHashMap();
+    public static final Map<Item, SoundEventFunction<ItemStack>> EATING_MAP = Maps.newHashMap();
 
     static void addUse(Item item, SoundEventFunction<ItemStack> function) {
         USING_MAP.put(item, function);
@@ -23,13 +23,16 @@ public class ItemSoundModifications {
         USING_MAP.put(item, (stack) -> soundEvent);
     }
 
+    static void addFood(Item item, SoundEventFunction<ItemStack> function) {
+        EATING_MAP.put(item, function);
+    }
+
     static void addFood(Item item, SoundEvent soundEvent) {
-        EATING_MAP.put(item, soundEvent);
+        EATING_MAP.put(item, (stack) -> soundEvent);
     }
 
     public static void init() {
-        addUse(Items.BOW, (stack) -> DecibelSoundEvents.ITEM_BOW_PULL);
-
+        addUse(Items.BOW, DecibelSoundEvents.ITEM_BOW_PULL);
         addFood(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
         addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
         addFood(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);

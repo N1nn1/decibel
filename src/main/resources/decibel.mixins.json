@@ -7,7 +7,6 @@
 		"BlockMixin",
 		"BowItemMixin",
 		"EnderPearlItemMixin",
-		"ItemMixin",
 		"LivingEntityMixin"
 	],
 	"client": [],
