@@ -3,14 +3,25 @@ package com.ninni.decibel.sound;
 import java.util.Map;
 
 import com.google.common.collect.Maps;
+import com.ninni.decibel.SoundGroupFunction;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FarmlandBlock;
 import net.minecraft.sound.BlockSoundGroup;
 
 public class BlockSoundModifications {
 
-    public static final Map<Block, BlockSoundGroup> SOUND_GROUP_MAP = Maps.newHashMap();
+    public static final Map<Block, SoundGroupFunction<BlockState>> SOUND_GROUP_MAP = Maps.newHashMap();
+
+    static void addBlock(Block block, SoundGroupFunction<BlockState> function) {
+        SOUND_GROUP_MAP.put(block, function);
+    }
+
+    static void addBlock(Block block, BlockSoundGroup soundGroup) {
+        SOUND_GROUP_MAP.put(block, (state) -> soundGroup);
+    }
 
     static void addLeaves(Block block) {
         addBlock(block, DecibelSoundGroups.GENERIC_LEAVES);
@@ -18,10 +29,6 @@ public class BlockSoundModifications {
 
     static void addSapling(Block block) {
         addBlock(block, DecibelSoundGroups.SAPLING);
-    }
-
-    static void addBlock(Block block, BlockSoundGroup soundGroup) {
-        SOUND_GROUP_MAP.put(block, soundGroup);
     }
 
     public static void init() {
@@ -56,6 +63,8 @@ public class BlockSoundModifications {
         addBlock(Blocks.DIRT, DecibelSoundGroups.DIRT);
         addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
         addBlock(Blocks.PODZOL, DecibelSoundGroups.DIRT);
+
+        addBlock(Blocks.FARMLAND, (state) -> state.get(FarmlandBlock.MOISTURE) > 6 ? BlockSoundGroup.SLIME : DecibelSoundGroups.DIRT);
 
         addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
         addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);

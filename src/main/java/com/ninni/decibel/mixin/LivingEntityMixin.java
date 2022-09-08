@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 
 @Mixin(LivingEntity.class)
@@ -19,9 +19,9 @@ public abstract class LivingEntityMixin {
     // dunno if this works in multiplayer atm, needs to be tested
     @Inject(at = @At("TAIL"), method = "setCurrentHand", cancellable = true)
     public void setCurrentHand(Hand hand, CallbackInfo info) {
-        Item item = mob.getStackInHand(hand).getItem();
-        if (ItemSoundModifications.USING_MAP.containsKey(item)) {
-            mob.playSound(ItemSoundModifications.USING_MAP.get(item), 1, 1);
+        ItemStack stack = mob.getStackInHand(hand);
+        if (ItemSoundModifications.USING_MAP.containsKey(stack.getItem())) {
+            mob.playSound(ItemSoundModifications.USING_MAP.get(stack.getItem()).get(stack), 1, 1);
         }
     }
 }
