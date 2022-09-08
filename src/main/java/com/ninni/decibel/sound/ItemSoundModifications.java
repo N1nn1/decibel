@@ -1,23 +1,24 @@
 package com.ninni.decibel.sound;
 
+import java.util.Map;
+
 import com.google.common.collect.Maps;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;
 
-import java.util.Map;
-
 public class ItemSoundModifications {
 
-    public static final Map<Item, SoundEvent> SOUND_GROUP_MAP = Maps.newHashMap();
+    public static final Map<Item, SoundEvent> EAT_SOUND_MAP = Maps.newHashMap();
 
-    static void addItem(Item item, SoundEvent soundEvent) {
-        SOUND_GROUP_MAP.put(item, soundEvent);
+    static void addFood(Item item, SoundEvent soundEvent) {
+        EAT_SOUND_MAP.put(item, soundEvent);
     }
 
     public static void init() {
-        addItem(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
-        addItem(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
-        addItem(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
+        addFood(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
+        addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
+        addFood(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
     }
 }

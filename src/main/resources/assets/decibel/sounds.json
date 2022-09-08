@@ -215,19 +215,23 @@
         "sounds": [
             {
                 "name": "decibel:block/sapling/break1",
-                "volume": 0.5
+                "volume": 0.5,
+                "pitch": 1.2
             },
             {
                 "name": "decibel:block/sapling/break2",
-                "volume": 0.5
+                "volume": 0.5,
+                "pitch": 1.2
             },
             {
                 "name": "decibel:block/sapling/break3",
-                "volume": 0.5
+                "volume": 0.5,
+                "pitch": 1.2
             },
             {
                 "name": "decibel:block/sapling/break4",
-                "volume": 0.5
+                "volume": 0.5,
+                "pitch": 1.2
             }
         ],
         "subtitle": "subtitles.block.generic.break"
@@ -668,10 +672,26 @@
     },
     "block.cobweb.break": {
         "sounds": [
-            "decibel:block/cobweb/break1",
-            "decibel:block/cobweb/break2",
-            "decibel:block/cobweb/break3",
-            "decibel:block/cobweb/break4"
+            {
+                "name": "decibel:block/cobweb/break1",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:block/cobweb/break2",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:block/cobweb/break3",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:block/cobweb/break24",
+                "pitch": 1.6,
+                "volume": 0.3
+            }
         ],
         "subtitle": "subtitles.block.generic.break"
     },
@@ -694,8 +714,16 @@
     },
     "block.cobweb.place": {
         "sounds": [
-            "decibel:block/cobweb/place1",
-            "decibel:block/cobweb/place2"
+            {
+                "name": "decibel:block/cobweb/place1",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:block/cobweb/place2",
+                "pitch": 1.6,
+                "volume": 0.3
+            }
         ],
         "subtitle": "subtitles.block.generic.place"
     },
@@ -703,19 +731,23 @@
         "sounds": [
             {
                 "name": "decibel:block/cobweb/step1",
-                "volume": 0.75
+                "volume": 0.75,
+                "pitch": 1.6
             },
             {
                 "name": "decibel:block/cobweb/step2",
-                "volume": 0.75
+                "volume": 0.75,
+                "pitch": 1.6
             },
             {
                 "name": "decibel:block/cobweb/step3",
-                "volume": 0.75
+                "volume": 0.75,
+                "pitch": 1.6
             },
             {
                 "name": "decibel:block/cobweb/step4",
-                "volume": 0.75
+                "volume": 0.75,
+                "pitch": 1.6
             }
         ],
         "subtitle": "subtitles.block.generic.footsteps"
@@ -732,6 +764,14 @@
             "decibel:item/apple/eat2",
             "decibel:item/apple/eat3"
         ],
-        "subtitle": "subtitles.block.fire.ambient"
+        "subtitle": "subtitles.entity.generic.eat"
+    },
+    "item.golden_apple.eat": {
+        "sounds": [
+            "decibel:item/golden_apple/eat1",
+            "decibel:item/golden_apple/eat2",
+            "decibel:item/golden_apple/eat3"
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
     }
 }
