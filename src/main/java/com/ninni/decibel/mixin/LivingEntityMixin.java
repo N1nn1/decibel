@@ -19,7 +19,7 @@ public abstract class LivingEntityMixin {
     private final LivingEntity mob = (LivingEntity) (Object) this;
 
     // dunno if this works in multiplayer atm, needs to be tested
-    @Inject(at = @At("TAIL"), method = "setCurrentHand", cancellable = true)
+    @Inject(at = @At("TAIL"), method = "setCurrentHand")
     public void setCurrentHand(Hand hand, CallbackInfo info) {
         ItemStack stack = mob.getStackInHand(hand);
         if (ItemSoundModifications.USING_MAP.containsKey(stack.getItem())) {

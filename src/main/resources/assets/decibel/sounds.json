@@ -1052,5 +1052,13 @@
             "decibel:item/golden_apple/eat3"
         ],
         "subtitle": "subtitles.entity.generic.eat"
+    },
+    "item.shield.use": {
+        "sounds": [
+            "decibel:item/golden_apple/eat1",
+            "decibel:item/golden_apple/eat2",
+            "decibel:item/golden_apple/eat3"
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
     }
 }

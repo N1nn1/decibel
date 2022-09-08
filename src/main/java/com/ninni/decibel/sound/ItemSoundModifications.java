@@ -33,6 +33,7 @@ public class ItemSoundModifications {
 
     public static void init() {
         addUse(Items.BOW, DecibelSoundEvents.ITEM_BOW_PULL);
+        addUse(Items.SHIELD, DecibelSoundEvents.ITEM_SHIELD_USE);
         addFood(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
         addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
         addFood(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
