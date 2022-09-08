@@ -1,0 +1,76 @@
+{
+    "block.dispenser.launch": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.block.dispenser.dispense"
+    },
+    "entity.arrow.shoot": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "decibel:item.bow.shoot",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.entity.arrow.shoot"
+    },
+    "entity.egg.throw": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.egg.throw"
+    },
+    "entity.ender_pearl.throw": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "decibel:item.ender_pearl.throw",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.entity.ender_pearl.throw"
+    },
+    "entity.experience_bottle.throw": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.potion.throw"
+    },
+    "entity.firework_rocket.shoot": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.firework_rocket.launch"
+    },
+    "entity.lingering_potion.throw": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.potion.throw"
+    },
+    "entity.skeleton.shoot": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.skeleton.shoot"
+    },
+    "entity.snow_golem.shoot": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.snowball.throw"
+    },
+    "entity.snowball.throw": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.snowball.throw"
+    },
+    "entity.splash_potion.throw": {
+        "sounds": [
+            "random/bow"
+        ],
+        "subtitle": "subtitles.entity.potion.throw"
+    }
+}

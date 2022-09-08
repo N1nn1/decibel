@@ -15,9 +15,9 @@ public abstract class ItemMixin {
 
     @Inject(at = @At("HEAD"), method = "getEatSound", cancellable = true)
     private void getModifiedEatingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        Item that = (Item) (Object) this;
-        if (ItemSoundModifications.EAT_SOUND_MAP.containsKey(that)) {
-            cir.setReturnValue(ItemSoundModifications.EAT_SOUND_MAP.get(that));
+        Item item = (Item) (Object) this;
+        if (ItemSoundModifications.EATING_MAP.containsKey(item)) {
+            cir.setReturnValue(ItemSoundModifications.EATING_MAP.get(item));
         }
     }
 }

@@ -762,6 +762,83 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
+    "item.bow.pull": {
+        "sounds": [
+            {
+                "name": "decibel:item/bow/pull1",
+                "pitch": 1.1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull1",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull2",
+                "pitch": 1.1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull2",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull3",
+                "pitch": 1.1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull3",
+                "pitch": 1.2,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull4",
+                "pitch": 1.1,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/bow/pull4",
+                "pitch": 1.2,
+                "volume": 0.5
+            }
+        ]
+    },
+    "item.bow.shoot": {
+        "sounds": [
+            {
+                "name": "decibel:item/bow/shoot1",
+                "pitch": 0.9,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/bow/shoot2",
+                "pitch": 0.9,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/bow/shoot3",
+                "pitch": 0.9,
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.ender_pearl.throw": {
+        "sounds": [
+            {
+                "name": "decibel:item/ender_pearl/throw1",
+                "pitch": 2.5,
+                "volume": 1.5
+            },
+            {
+                "name": "decibel:item/ender_pearl/throw2",
+                "pitch": 2.5,
+                "volume": 1.5
+            }
+        ]
+    },
     "item.golden_apple.eat": {
         "sounds": [
             "decibel:item/golden_apple/eat1",
