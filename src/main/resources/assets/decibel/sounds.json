@@ -421,23 +421,23 @@
         "sounds": [
             {
                 "name": "decibel:block/gravel/break1",
-                "pitch": 1,
-                "volume": 0.6
+                "pitch": 1.3,
+                "volume": 0.4
             },
             {
                 "name": "decibel:block/gravel/break2",
-                "pitch": 1,
-                "volume": 0.6
+                "pitch": 1.3,
+                "volume": 0.4
             },
             {
                 "name": "decibel:block/gravel/break3",
-                "pitch": 1,
-                "volume": 0.6
+                "pitch": 1.3,
+                "volume": 0.4
             },
             {
                 "name": "decibel:block/gravel/break4",
-                "pitch": 1,
-                "volume": 0.6
+                "pitch": 1.3,
+                "volume": 0.4
             }
         ],
         "subtitle": "subtitles.block.generic.break"
@@ -472,32 +472,42 @@
         "sounds": [
             {
                 "name": "decibel:block/gravel/step1",
-                "pitch": 1,
-                "volume": 0.6
+                "pitch": 1.1,
+                "volume": 0.7
             },
             {
                 "name": "decibel:block/gravel/step2",
-                "pitch": 1,
+                "pitch": 1.1,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/gravel/step3",
-                "pitch": 1,
+                "pitch": 1.1,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/gravel/step4",
-                "pitch": 1,
+                "pitch": 1.1,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/gravel/step5",
-                "pitch": 1,
+                "pitch": 1.1,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/gravel/step6",
-                "pitch": 1,
+                "pitch": 1.1,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/gravel/step7",
+                "pitch": 1.1,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/gravel/step8",
+                "pitch": 1.1,
                 "volume": 0.6
             }
         ],
