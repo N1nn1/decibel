@@ -12,6 +12,7 @@ public class DecibelSoundGroups {
     // can someone make a mixin to actually use this lmao
     public static final SoundEvent BLOCK_SOUL_FIRE_AMBIENT = register("block.soul_fire.ambient");
 
+    public static final BlockSoundGroup CACTUS = register("cactus", 1, 1);
     public static final BlockSoundGroup CLAY = register("clay", 1, 1);
     public static final BlockSoundGroup COARSE_DIRT = register("coarse_dirt", 1, 1);
     public static final BlockSoundGroup DIRT = register("dirt", 1, 1);

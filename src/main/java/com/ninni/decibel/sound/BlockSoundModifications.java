@@ -58,6 +58,8 @@ public class BlockSoundModifications {
         addBlock(Blocks.FERN, DecibelSoundGroups.GENERIC_LEAVES);
         addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.GENERIC_LEAVES);
 
+        addBlock(Blocks.CACTUS, DecibelSoundGroups.CACTUS);
+
         addBlock(Blocks.GRASS_BLOCK, DecibelSoundGroups.GRASS_BLOCK);
         addBlock(Blocks.COARSE_DIRT, DecibelSoundGroups.COARSE_DIRT);
         addBlock(Blocks.DIRT, DecibelSoundGroups.DIRT);

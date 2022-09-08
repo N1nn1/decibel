@@ -1,4 +1,102 @@
 {
+    "block.cactus.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/cactus/break1",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/cactus/break2",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/cactus/break3",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/cactus/break4",
+                "pitch": 1.3,
+                "volume": 0.42
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.cactus.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.cactus.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.cactus.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.cactus.step",
+                "pitch": 1.5,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.cactus.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.cactus.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.cactus.step": {
+        "sounds": [
+            {
+                "name": "decibel:block/cactus/step1",
+                "pitch": 1.5,
+                "volume": 0.7
+            },
+            {
+                "name": "decibel:block/cactus/step1",
+                "pitch": 1.6,
+                "volume": 0.7
+            },
+            {
+                "name": "decibel:block/cactus/step2",
+                "pitch": 1.5,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/cactus/step2",
+                "pitch": 1.6,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/cactus/step3",
+                "pitch": 1.5,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/cactus/step3",
+                "pitch": 1.6,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/cactus/step4",
+                "pitch": 1.5,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/cactus/step4",
+                "pitch": 1.6,
+                "volume": 0.6
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.clay.break": {
         "sounds": [
             {
