@@ -314,6 +314,50 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.farmland.break": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.farmland.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.fall",
+                "type": "event"
+            }
+        ]
+    },
+    "block.farmland.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.farmland.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.farmland.step": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.generic_leaves.break": {
         "sounds": [
             "decibel:block/generic_leaves/break1",
@@ -851,6 +895,68 @@
             "fire/fire"
         ],
         "subtitle": "subtitles.block.fire.ambient"
+    },
+    "block.wet_farmland.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/wet_farmland/break1",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/wet_farmland/break2",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/wet_farmland/break3",
+                "pitch": 1.3,
+                "volume": 0.42
+            },
+            {
+                "name": "decibel:block/wet_farmland/break4",
+                "pitch": 1.3,
+                "volume": 0.42
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.wet_farmland.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.wet_farmland.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.wet_farmland.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.wet_farmland.step",
+                "pitch": 1.5,
+                "type": "event",
+                "volume": 0.4
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.wet_farmland.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.wet_farmland.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.wet_farmland.step": {
+        "sounds": [
+            "decibel:block/wet_farmland/step1",
+            "decibel:block/wet_farmland/step2",
+            "decibel:block/wet_farmland/step3",
+            "decibel:block/wet_farmland/step4"
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
     },
     "item.apple.eat": {
         "sounds": [

@@ -66,7 +66,7 @@ public class BlockSoundModifications {
         addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
         addBlock(Blocks.PODZOL, DecibelSoundGroups.DIRT);
 
-        addBlock(Blocks.FARMLAND, (state) -> state.get(FarmlandBlock.MOISTURE) > 6 ? BlockSoundGroup.SLIME : DecibelSoundGroups.DIRT);
+        addBlock(Blocks.FARMLAND, (state) -> state.get(FarmlandBlock.MOISTURE) == 7 ? DecibelSoundGroups.WET_FARMLAND : DecibelSoundGroups.FARMLAND);
 
         addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
         addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);

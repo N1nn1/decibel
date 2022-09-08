@@ -16,6 +16,7 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup CLAY = register("clay", 1, 1);
     public static final BlockSoundGroup COARSE_DIRT = register("coarse_dirt", 1, 1);
     public static final BlockSoundGroup DIRT = register("dirt", 1, 1);
+    public static final BlockSoundGroup FARMLAND = register("farmland", 1, 1);
     public static final BlockSoundGroup GENERIC_LEAVES = register("generic_leaves", 1, 1);
     public static final BlockSoundGroup SAPLING = register("sapling", 1, 1);
     public static final BlockSoundGroup GLASS = register("glass", 1, 1);
@@ -25,6 +26,7 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup COBWEB = register("cobweb", 1, 1);
     public static final BlockSoundGroup GRAVEL = register("gravel", 1, 1);
     public static final BlockSoundGroup METAL = register("metal", 1, 1);
+    public static final BlockSoundGroup WET_FARMLAND = register("wet_farmland", 1, 1);
 
     private static BlockSoundGroup register(String name, float volume, float pitch) {
         return new BlockSoundGroup(volume, pitch, register(block(name, "break")), register(block(name, "step")), register(block(name, "place")), register(block(name, "hit")), register(block(name, "fall")));
