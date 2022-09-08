@@ -1,26 +1,43 @@
 package com.ninni.decibel.mixin;
 
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.ninni.decibel.sound.DecibelSoundEvents;
 
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.BowItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import net.minecraft.world.World;
 
 @Mixin(BowItem.class)
-public abstract class BowItemMixin {
-    @Unique private ItemStack stack;
+public abstract class BowItemMixin extends Item {
+    public BowItemMixin(Settings settings) {
+        super(settings);
+    }
 
+    @Unique
+    private ItemStack stack;
+
+    @Unique
+    public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
+        if (!world.isClient()) {
+            float useTime = getMaxUseTime(stack) - remainingUseTicks;
+            if (useTime == 15) {
+                var soundEvent = EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0 ? DecibelSoundEvents.ITEM_BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.ITEM_BOW_PULL_FINISH;
+                world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundCategory.PLAYERS, 1, 1);
+            }
+        }
+    }
 
     @Inject(method = "onStoppedUsing", at = @At(value = "HEAD"))
     private void getStack(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
@@ -42,5 +59,4 @@ public abstract class BowItemMixin {
         return DecibelSoundEvents.ITEM_BOW_SHOOT;
 
     }
-
 }

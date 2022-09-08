@@ -5,6 +5,8 @@ import java.util.Map;
 import com.google.common.collect.Maps;
 import com.ninni.decibel.SoundEventFunction;
 
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -32,7 +34,7 @@ public class ItemSoundModifications {
     }
 
     public static void init() {
-        addUse(Items.BOW, DecibelSoundEvents.ITEM_BOW_PULL);
+        addUse(Items.BOW, (stack) -> EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0 ? DecibelSoundEvents.ITEM_BOW_PULL_FLAME : DecibelSoundEvents.ITEM_BOW_PULL);
         addUse(Items.SHIELD, DecibelSoundEvents.ITEM_SHIELD_USE);
         addFood(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
         addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);

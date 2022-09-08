@@ -990,6 +990,42 @@
             }
         ]
     },
+    "item.bow.pull_flame": {
+        "sounds": [
+            {
+                "name": "decibel:item.bow.pull",
+                "type": "event"
+            }
+        ]
+    },
+    "item.bow.pull_finish": {
+        "sounds": [
+            {
+                "name": "decibel:item/bow/pull_finish",
+                "pitch": 1.1,
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.bow.pull_finish_ignite": {
+        "sounds": [
+            {
+                "name": "decibel:item/bow/pull_finish_ignite1",
+                "pitch": 1.1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/bow/pull_finish_ignite2",
+                "pitch": 1.1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/bow/pull_finish_ignite3",
+                "pitch": 1.1,
+                "volume": 0.8
+            }
+        ]
+    },
     "item.bow.shoot": {
         "sounds": [
             {
@@ -1013,17 +1049,17 @@
     "item.bow.shoot_flame": {
         "sounds": [
             {
-                "name": "decibel:item/bow/flame1",
+                "name": "decibel:item/bow/shoot_flame1",
                 "pitch": 0.9,
                 "volume": 0.92
             },
             {
-                "name": "decibel:item/bow/flame2",
+                "name": "decibel:item/bow/shoot_flame2",
                 "pitch": 0.9,
                 "volume": 0.92
             },
             {
-                "name": "decibel:item/bow/flame3",
+                "name": "decibel:item/bow/shoot_flame3",
                 "pitch": 0.9,
                 "volume": 0.92
             }
@@ -1055,10 +1091,22 @@
     },
     "item.shield.use": {
         "sounds": [
-            "decibel:item/golden_apple/eat1",
-            "decibel:item/golden_apple/eat2",
-            "decibel:item/golden_apple/eat3"
+            {
+                "name": "decibel:item/shield/raise",
+                "pitch": 0.9,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/shield/raise",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/shield/raise",
+                "pitch": 1.1,
+                "volume": 0.6
+            }
         ],
-        "subtitle": "subtitles.entity.generic.eat"
+        "subtitle": "decibel.item.shield.use"
     }
 }
