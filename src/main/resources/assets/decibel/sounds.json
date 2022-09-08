@@ -56,42 +56,22 @@
         "sounds": [
             {
                 "name": "decibel:block/cactus/step1",
-                "pitch": 1.5,
-                "volume": 0.7
-            },
-            {
-                "name": "decibel:block/cactus/step1",
-                "pitch": 1.6,
-                "volume": 0.7
-            },
-            {
-                "name": "decibel:block/cactus/step2",
-                "pitch": 1.5,
+                "pitch": 1.7,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/cactus/step2",
-                "pitch": 1.6,
+                "pitch": 1.7,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/cactus/step3",
-                "pitch": 1.5,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:block/cactus/step3",
-                "pitch": 1.6,
+                "pitch": 1.7,
                 "volume": 0.6
             },
             {
                 "name": "decibel:block/cactus/step4",
-                "pitch": 1.5,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:block/cactus/step4",
-                "pitch": 1.6,
+                "pitch": 1.7,
                 "volume": 0.6
             }
         ],
