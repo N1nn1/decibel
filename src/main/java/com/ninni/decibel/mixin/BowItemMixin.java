@@ -26,13 +26,13 @@ public abstract class BowItemMixin extends Item {
     }
 
     @Unique
-    private ItemStack stack;
+    private ItemStack lastStack;
 
     @Unique
     public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
         if (!world.isClient()) {
             float useTime = getMaxUseTime(stack) - remainingUseTicks;
-            if (useTime == 15) {
+            if (useTime == 18) {
                 var soundEvent = EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0 ? DecibelSoundEvents.ITEM_BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.ITEM_BOW_PULL_FINISH;
                 world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundCategory.PLAYERS, 1, 1);
             }
@@ -41,22 +41,20 @@ public abstract class BowItemMixin extends Item {
 
     @Inject(method = "onStoppedUsing", at = @At(value = "HEAD"))
     private void getStack(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
-        this.stack = stack;
+        lastStack = stack;
     }
 
     @Inject(method = "onStoppedUsing", at = @At(value = "TAIL"))
     private void forgetStack(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
-        this.stack = null;
+        lastStack = null;
     }
 
     @ModifyArg(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/sound/SoundEvent;Lnet/minecraft/sound/SoundCategory;FF)V"), index = 4)
     private SoundEvent changeSound(SoundEvent sound) {
-        if (this.stack != null) {
-            if (EnchantmentHelper.getLevel(Enchantments.FLAME, this.stack) > 0) {
-                return DecibelSoundEvents.ITEM_BOW_SHOOT_FLAME;
-            }
+        if (lastStack != null && EnchantmentHelper.getLevel(Enchantments.FLAME, lastStack) > 0) {
+            return DecibelSoundEvents.ITEM_BOW_SHOOT_FLAME;
+        } else {
+            return DecibelSoundEvents.ITEM_BOW_SHOOT;
         }
-        return DecibelSoundEvents.ITEM_BOW_SHOOT;
-
     }
 }
