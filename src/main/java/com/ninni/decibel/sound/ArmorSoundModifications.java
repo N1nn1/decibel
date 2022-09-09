@@ -18,6 +18,11 @@ public class ArmorSoundModifications {
 
     public static void init() {
         addArmor(ArmorMaterials.IRON, DecibelSoundEvents.ARMOR_IRON_STEP);
+        addArmor(ArmorMaterials.CHAIN, DecibelSoundEvents.ARMOR_CHAINMAIL_STEP);
+        addArmor(ArmorMaterials.DIAMOND, DecibelSoundEvents.ARMOR_DIAMOND_STEP);
+        addArmor(ArmorMaterials.LEATHER, DecibelSoundEvents.ARMOR_LEATHER_STEP);
+        addArmor(ArmorMaterials.NETHERITE, DecibelSoundEvents.ARMOR_NETHERITE_STEP);
+        addArmor(ArmorMaterials.GOLD, DecibelSoundEvents.ARMOR_GOLD_STEP);
     }
 
 }

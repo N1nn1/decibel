@@ -20,6 +20,11 @@ public class DecibelSoundEvents {
     public static final SoundEvent ITEM_GOLDEN_APPLE_EAT = createItemSound("golden_apple", "eat");
 
     public static final SoundEvent ARMOR_IRON_STEP = createArmorSound("iron", "step");
+    public static final SoundEvent ARMOR_LEATHER_STEP = createArmorSound("leather", "step");
+    public static final SoundEvent ARMOR_CHAINMAIL_STEP = createArmorSound("chainmail", "step");
+    public static final SoundEvent ARMOR_DIAMOND_STEP = createArmorSound("diamond", "step");
+    public static final SoundEvent ARMOR_NETHERITE_STEP = createArmorSound("netherite", "step");
+    public static final SoundEvent ARMOR_GOLD_STEP = createArmorSound("gold", "step");
 
     public static SoundEvent createItemSound(String item, String type) {
         Identifier identifier = new Identifier(MOD_ID, "item." + item + "." + type);

@@ -1,10 +1,10 @@
 package com.ninni.decibel.mixin;
 
 import com.ninni.decibel.sound.ArmorSoundModifications;
-import com.ninni.decibel.sound.DecibelSoundEvents;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
@@ -23,10 +23,11 @@ public class EntityMixin {
 
         for (ItemStack itemStack : iterable) {
             Item item = itemStack.getItem();
-            if ((item instanceof ArmorItem armorItem) && ArmorSoundModifications.SOUND_MAP.containsKey((armorItem.getMaterial()))) {
-                entity.playSound(DecibelSoundEvents.ARMOR_IRON_STEP, 0.25F, 1);
+            for (ArmorMaterial armorMaterial : ArmorSoundModifications.SOUND_MAP.keySet()) {
+                if ((item instanceof ArmorItem armorItem) && armorMaterial == armorItem.getMaterial()) {
+                    entity.playSound(ArmorSoundModifications.SOUND_MAP.get(armorMaterial).get(armorMaterial), 1, 1);
+                }
             }
         }
-
     }
 }
