@@ -91,5 +91,7 @@ public class ItemSoundModifications {
         addFood(Items.APPLE, DecibelSoundEvents.ITEM_APPLE_EAT);
         addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
         addFood(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.ITEM_GOLDEN_APPLE_EAT);
+
+        addFood(Items.BREAD, DecibelSoundEvents.ITEM_BREAD_EAT);
     }
 }

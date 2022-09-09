@@ -1149,6 +1149,26 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
+    "item.bread.eat": {
+        "sounds": [
+            {
+                "name": "decibel:item/bread/eat1",
+                "pitch": 0.85,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/bread/eat2",
+                "pitch": 0.85,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/bread/eat3",
+                "pitch": 0.85,
+                "volume": 0.3
+            }
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
+    },
     "item.bow.pull": {
         "sounds": [
             {

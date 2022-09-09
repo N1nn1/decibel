@@ -10,6 +10,7 @@ public class DecibelSoundEvents {
     
     public static final SoundEvent ITEM_APPLE_EAT = createItemSound("apple", "eat");
     public static final SoundEvent ITEM_GOLDEN_APPLE_EAT = createItemSound("golden_apple", "eat");
+    public static final SoundEvent ITEM_BREAD_EAT = createItemSound("bread", "eat");
     
     public static final SoundEvent ITEM_BOW_PULL = createItemSound("bow", "pull");
     public static final SoundEvent ITEM_BOW_PULL_FLAME = createItemSound("bow", "pull_flame");
