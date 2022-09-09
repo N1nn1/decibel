@@ -12,6 +12,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Hand;
+import net.minecraft.util.hit.HitResult;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
@@ -36,9 +37,12 @@ public abstract class LivingEntityMixin {
 
     @Inject(at = @At("TAIL"), method = "swingHand", cancellable = true)
     public void addSwingSound(Hand hand, CallbackInfo info) {
-        ItemStack stack = mob.getStackInHand(hand);
-        if (ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
-            mob.playSound(ItemSoundModifications.SWINGING_MAP.get(stack.getItem()).get(stack), 1, 1);
+        HitResult result = mob.raycast(5, 0, false);
+        if (result.getType() != HitResult.Type.BLOCK) {
+            ItemStack stack = mob.getStackInHand(hand);
+            if (ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
+                mob.playSound(ItemSoundModifications.SWINGING_MAP.get(stack.getItem()).get(stack), 1, 1);
+            }
         }
     }
 }
