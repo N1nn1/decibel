@@ -1026,6 +1026,121 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "item.sword.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/sword/swing1",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/sword/swing2",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/sword/swing3",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/sword/swing4",
+                "pitch": 1.0,
+                "volume": 0.6
+            }
+        ]
+    },
+    "item.pickaxe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 1.6,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 1.6,
+                "volume": 0.3
+            }
+        ]
+    },
+    "item.shovel.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 1.4,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 1.4,
+                "volume": 0.5
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 1.4,
+                "volume": 0.5
+            }
+        ]
+    },
+    "item.hoe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 2.2,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 2.2,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 2.2,
+                "volume": 0.2
+            }
+        ]
+    },
+    "item.axe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/axe/swing1",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/axe/swing2",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/axe/swing3",
+                "pitch": 1.0,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/axe/swing1",
+                "pitch": 1.05,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/axe/swing2",
+                "pitch": 1.05,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/axe/swing3",
+                "pitch": 1.05,
+                "volume": 0.6
+            }
+        ]
+    },
     "item.apple.eat": {
         "sounds": [
             "decibel:item/apple/eat1",
