@@ -563,19 +563,23 @@
         "sounds": [
             {
                 "name": "decibel:block/podzol/break1",
-                "volume": 0.6
+                "volume": 0.6,
+                "pitch": 1.3
             },
             {
                 "name": "decibel:block/podzol/break2",
-                "volume": 0.6
+                "volume": 0.6,
+                "pitch": 1.3
             },
             {
                 "name": "decibel:block/podzol/break3",
-                "volume": 0.6
+                "volume": 0.6,
+                "pitch": 1.3
             },
             {
                 "name": "decibel:block/podzol/break4",
-                "volume": 0.6
+                "volume": 0.6,
+                "pitch": 1.3
             }
         ],
         "subtitle": "subtitles.block.generic.break"
