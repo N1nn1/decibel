@@ -80,8 +80,34 @@
     "block.clay.break": {
         "sounds": [
             {
-                "name": "minecraft:block.mud.break",
-                "type": "event"
+                "name": "decibel:block/clay/break1",
+                "pitch": 1.4,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/clay/break2",
+                "pitch": 1.4,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/clay/break3",
+                "pitch": 1.4,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/clay/break4",
+                "pitch": 1.4,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/clay/break5",
+                "pitch": 1.4,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/clay/break6",
+                "pitch": 1.4,
+                "volume": 0.6
             }
         ],
         "subtitle": "subtitles.block.generic.break"
@@ -89,7 +115,7 @@
     "block.clay.fall": {
         "sounds": [
             {
-                "name": "minecraft:block.mud.fall",
+                "name": "decibel:block.clay.break",
                 "type": "event"
             }
         ]
@@ -97,7 +123,7 @@
     "block.clay.hit": {
         "sounds": [
             {
-                "name": "minecraft:block.mud.hit",
+                "name": "decibel:block.clay.step",
                 "type": "event"
             }
         ],
@@ -106,7 +132,7 @@
     "block.clay.place": {
         "sounds": [
             {
-                "name": "minecraft:block.mud.place",
+                "name": "decibel:block.clay.break",
                 "type": "event"
             }
         ],
@@ -114,10 +140,12 @@
     },
     "block.clay.step": {
         "sounds": [
-            {
-                "name": "minecraft:block.mud.step",
-                "type": "event"
-            }
+            "decibel:block/clay/step1",
+            "decibel:block/clay/step2",
+            "decibel:block/clay/step3",
+            "decibel:block/clay/step4",
+            "decibel:block/clay/step5",
+            "decibel:block/clay/step6"
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
