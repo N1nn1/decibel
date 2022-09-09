@@ -33,4 +33,12 @@ public abstract class LivingEntityMixin {
             info.setReturnValue(ItemSoundModifications.EATING_MAP.get(stack.getItem()).get(stack));
         }
     }
+
+    @Inject(at = @At("TAIL"), method = "swingHand", cancellable = true)
+    public void addSwingSound(Hand hand, CallbackInfo info) {
+        ItemStack stack = mob.getStackInHand(hand);
+        if (ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
+            mob.playSound(ItemSoundModifications.SWINGING_MAP.get(stack.getItem()).get(stack), 1, 1);
+        }
+    }
 }
