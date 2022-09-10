@@ -1031,22 +1031,22 @@
             {
                 "name": "decibel:item/sword/swing1",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/sword/swing2",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/sword/swing3",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/sword/swing4",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             }
         ]
     },
@@ -1055,17 +1055,17 @@
             {
                 "name": "decibel:item/pickaxe/swing1",
                 "pitch": 1.6,
-                "volume": 0.3
+                "volume": 0.6
             },
             {
                 "name": "decibel:item/pickaxe/swing2",
                 "pitch": 1.6,
-                "volume": 0.3
+                "volume": 0.6
             },
             {
                 "name": "decibel:item/pickaxe/swing3",
                 "pitch": 1.6,
-                "volume": 0.3
+                "volume": 0.6
             }
         ]
     },
@@ -1074,17 +1074,17 @@
             {
                 "name": "decibel:item/pickaxe/swing1",
                 "pitch": 1.4,
-                "volume": 0.5
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/pickaxe/swing2",
                 "pitch": 1.4,
-                "volume": 0.5
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/pickaxe/swing3",
                 "pitch": 1.4,
-                "volume": 0.5
+                "volume": 0.8
             }
         ]
     },
@@ -1093,17 +1093,17 @@
             {
                 "name": "decibel:item/pickaxe/swing1",
                 "pitch": 2.2,
-                "volume": 0.2
+                "volume": 0.6
             },
             {
                 "name": "decibel:item/pickaxe/swing2",
                 "pitch": 2.2,
-                "volume": 0.2
+                "volume": 0.6
             },
             {
                 "name": "decibel:item/pickaxe/swing3",
                 "pitch": 2.2,
-                "volume": 0.2
+                "volume": 0.6
             }
         ]
     },
@@ -1112,32 +1112,17 @@
             {
                 "name": "decibel:item/axe/swing1",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/axe/swing2",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.8
             },
             {
                 "name": "decibel:item/axe/swing3",
                 "pitch": 1.0,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/axe/swing1",
-                "pitch": 1.05,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/axe/swing2",
-                "pitch": 1.05,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/axe/swing3",
-                "pitch": 1.05,
-                "volume": 0.6
+                "volume": 0.8
             }
         ]
     },
@@ -1317,17 +1302,17 @@
             {
                 "name": "decibel:item/shield/raise",
                 "pitch": 0.9,
-                "volume": 0.6
+                "volume": 0.4
             },
             {
                 "name": "decibel:item/shield/raise",
                 "pitch": 1.0,
-                "volume": 0.6
+                "volume": 0.4
             },
             {
                 "name": "decibel:item/shield/raise",
                 "pitch": 1.1,
-                "volume": 0.6
+                "volume": 0.4
             }
         ],
         "subtitle": "decibel.item.shield.use"
