@@ -1154,6 +1154,20 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
+    "item.chorus.eat": {
+        "sounds": [
+            "decibel:item/chorus/eat1",
+            "decibel:item/chorus/eat2",
+            "decibel:item/chorus/eat3"
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
+    },
+    "item.chorus.burp": {
+        "sounds": [
+            "decibel:item/chorus/burp"
+        ],
+        "subtitle": "decibel.item.chorus.burp"
+    },
     "item.bow.pull": {
         "sounds": [
             {
@@ -1322,37 +1336,37 @@
             {
                 "name": "decibel:armor/iron/step1",
                 "pitch": 0.9,
-                "volume": 0.1
+                "volume": 0.05
             },
             {
                 "name": "decibel:armor/iron/step2",
                 "pitch": 0.9,
-                "volume": 0.1
+                "volume": 0.05
             },
             {
                 "name": "decibel:armor/iron/step3",
-                "pitch": 0.9,
-                "volume": 0.1
+                "pitch": 0.8,
+                "volume": 0.05
             },
             {
                 "name": "decibel:armor/iron/step4",
                 "pitch": 0.9,
-                "volume": 0.1
+                "volume": 0.05
             },
             {
                 "name": "decibel:armor/iron/step5",
                 "pitch": 0.9,
-                "volume": 0.1
+                "volume": 0.05
             },
             {
-                "name": "decibel:armor/iron/step6",
-                "pitch": 0.9,
-                "volume": 0.1
+                "name": "decibel:armor/iron/step4",
+                "pitch": 0.5,
+                "volume": 0.05
             },
             {
-                "name": "decibel:armor/iron/step7",
-                "pitch": 0.9,
-                "volume": 0.1
+                "name": "decibel:armor/iron/step5",
+                "pitch": 0.6,
+                "volume": 0.05
             }
         ]
     },
@@ -1387,6 +1401,40 @@
                 "name": "decibel:armor/chainmail/step6",
                 "pitch": 0.9,
                 "volume": 0.1
+            }
+        ]
+    },
+    "armor.diamond.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/diamond/step1",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step2",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step3",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step4",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step5",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step6",
+                "pitch": 0.9,
+                "volume": 0.2
             }
         ]
     },

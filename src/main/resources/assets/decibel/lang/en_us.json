@@ -1,5 +1,6 @@
 {
     "mod.decibel.discord": "Discord",
     "mod.decibel.wiki": "Wiki",
-    "decibel.item.shield.use": "Shield is raised"
+    "decibel.item.shield.use": "Shield is raised",
+    "decibel.item.chorus.burp": "Player teleports"
 }
