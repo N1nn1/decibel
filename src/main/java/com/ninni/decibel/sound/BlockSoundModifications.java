@@ -23,10 +23,6 @@ public class BlockSoundModifications {
         SOUND_GROUP_MAP.put(block, (state) -> soundGroup);
     }
 
-    static void addLeaves(Block block) {
-        addBlock(block, DecibelSoundGroups.GENERIC_LEAVES);
-    }
-
     static void addSapling(Block block) {
         addBlock(block, DecibelSoundGroups.SAPLING);
     }
@@ -62,6 +58,10 @@ public class BlockSoundModifications {
 
         addBlock(Blocks.GRASS_BLOCK, DecibelSoundGroups.GRASS_BLOCK);
         addBlock(Blocks.COARSE_DIRT, DecibelSoundGroups.COARSE_DIRT);
+        addBlock(Blocks.SAND, DecibelSoundGroups.SAND);
+        addBlock(Blocks.RED_SAND, DecibelSoundGroups.SAND);
+
+
         addBlock(Blocks.DIRT, DecibelSoundGroups.DIRT);
         addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
         addBlock(Blocks.PODZOL, DecibelSoundGroups.PODZOL);
@@ -83,13 +83,5 @@ public class BlockSoundModifications {
         addSapling(Blocks.MANGROVE_PROPAGULE);
         addSapling(Blocks.OAK_SAPLING);
         addSapling(Blocks.SPRUCE_SAPLING);
-
-        addLeaves(Blocks.ACACIA_LEAVES);
-        addLeaves(Blocks.BIRCH_LEAVES);
-        addLeaves(Blocks.DARK_OAK_LEAVES);
-        addLeaves(Blocks.JUNGLE_LEAVES);
-        addLeaves(Blocks.MANGROVE_LEAVES);
-        addLeaves(Blocks.OAK_LEAVES);
-        addLeaves(Blocks.SPRUCE_LEAVES);
     }
 }

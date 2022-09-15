@@ -1026,6 +1026,52 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
+    "block.sand.step": {
+        "sounds": [
+            "decibel:block/sand/step1",
+            "decibel:block/sand/step2",
+            "decibel:block/sand/step3",
+            "decibel:block/sand/step4",
+            "decibel:block/sand/step5"
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.sand.break": {
+        "sounds": [
+            "decibel:block/sand/break1",
+            "decibel:block/sand/break2",
+            "decibel:block/sand/break3",
+            "decibel:block/sand/break4"
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.sand.place": {
+        "sounds": [
+            "decibel:block/sand/place1",
+            "decibel:block/sand/place2",
+            "decibel:block/sand/place3",
+            "decibel:block/sand/place4"
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.sand.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.sand.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.sand.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.sand.fall",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.fall"
+    },
     "item.sword.swing": {
         "sounds": [
             {

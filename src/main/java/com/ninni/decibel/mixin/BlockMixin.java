@@ -1,5 +1,7 @@
 package com.ninni.decibel.mixin;
 
+import com.ninni.decibel.sound.DecibelSoundGroups;
+import net.minecraft.block.LeavesBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

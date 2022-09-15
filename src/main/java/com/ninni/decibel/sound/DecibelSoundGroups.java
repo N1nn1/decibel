@@ -28,6 +28,8 @@ public class DecibelSoundGroups {
     public static final BlockSoundGroup GRAVEL = register("gravel", 1, 1);
     public static final BlockSoundGroup METAL = register("metal", 1, 1);
     public static final BlockSoundGroup WET_FARMLAND = register("wet_farmland", 1, 1);
+    public static final BlockSoundGroup SAND = register("sand", 1, 1);
+
 
     private static BlockSoundGroup register(String name, float volume, float pitch) {
         return new BlockSoundGroup(volume, pitch, register(block(name, "break")), register(block(name, "step")), register(block(name, "place")), register(block(name, "hit")), register(block(name, "fall")));
