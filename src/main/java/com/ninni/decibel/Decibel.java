@@ -1,10 +1,13 @@
 package com.ninni.decibel;
 
+import com.ninni.decibel.config.DecibelConfig;
 import com.ninni.decibel.resourcepacks.ModResourcePacks;
 import com.ninni.decibel.sound.ArmorSoundModifications;
 import com.ninni.decibel.sound.BlockSoundModifications;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 
@@ -22,5 +25,6 @@ public class Decibel implements ModInitializer {
 		ItemSoundModifications.init();
 		ArmorSoundModifications.init();
 		ModResourcePacks.init();
+		AutoConfig.register(DecibelConfig.class, JanksonConfigSerializer::new);
 	}
 }

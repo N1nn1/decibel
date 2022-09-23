@@ -30,6 +30,9 @@
 	"entrypoints": {
 		"main": [
 			"com.ninni.decibel.Decibel"
+		],
+		"modmenu" : [
+			"com.ninni.decibel.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
