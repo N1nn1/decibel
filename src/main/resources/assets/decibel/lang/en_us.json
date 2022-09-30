@@ -1,8 +1,18 @@
 {
     "mod.decibel.discord": "Discord",
     "mod.decibel.wiki": "Wiki",
-    "text.autoconfig.decibel.title": "Decibel Config",
-    "text.autoconfig.decibel.option.toggleArmor": "Armor Footsteps",
+
+    "text.autoconfig.decibel.title": "Decibel Configuration",
+    
+    "text.autoconfig.decibel.option.addArmorStepSounds": "Add Armor Stepping Sounds",
+    "text.autoconfig.decibel.option.addBowReadySound": "Add Bow Pull Finish Sound",
+    "text.autoconfig.decibel.option.addItemUseSounds": "Add Item Use Sounds",
+    "text.autoconfig.decibel.option.addWeaponSwingSounds": "Add Weapon Swing Sounds",
+    "text.autoconfig.decibel.option.updateBlockSounds": "Update Block Sounds",
+    "text.autoconfig.decibel.option.updateBowShootSound": "Update Bow Shoot Sound",
+    "text.autoconfig.decibel.option.updateEatingSounds": "Update Eating Sounds",
+    "text.autoconfig.decibel.option.updateEnderPearlThrowSound": "Update Ender Pearl Throw Sound",
+
     "decibel.item.shield.use": "Shield is raised",
     "decibel.item.chorus.burp": "Player teleports"
 }

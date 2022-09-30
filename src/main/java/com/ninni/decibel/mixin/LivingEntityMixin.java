@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
 import net.minecraft.entity.LivingEntity;
@@ -22,14 +23,14 @@ public abstract class LivingEntityMixin {
     @Inject(at = @At("TAIL"), method = "setCurrentHand")
     public void setCurrentHand(Hand hand, CallbackInfo info) {
         ItemStack stack = mob.getStackInHand(hand);
-        if (ItemSoundModifications.USING_MAP.containsKey(stack.getItem())) {
+        if (Decibel.getConfig().addItemUseSounds && ItemSoundModifications.USING_MAP.containsKey(stack.getItem())) {
             mob.playSound(ItemSoundModifications.USING_MAP.get(stack.getItem()).get(stack), 1, 1);
         }
     }
 
     @Inject(at = @At("TAIL"), method = "getEatSound", cancellable = true)
     public void modifyEatSound(ItemStack stack, CallbackInfoReturnable<SoundEvent> info) {
-        if (ItemSoundModifications.EATING_MAP.containsKey(stack.getItem())) {
+        if (Decibel.getConfig().updateEatingSounds && ItemSoundModifications.EATING_MAP.containsKey(stack.getItem())) {
             info.setReturnValue(ItemSoundModifications.EATING_MAP.get(stack.getItem()).get(stack));
         }
     }

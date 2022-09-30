@@ -19,6 +19,10 @@ public class Decibel implements ModInitializer {
 		return new Identifier(MOD_ID, path);
 	}
 
+	public static DecibelConfig getConfig() {
+		return AutoConfig.getConfigHolder(DecibelConfig.class).getConfig();
+	}
+
 	@Override
 	public void onInitialize() {
 		BlockSoundModifications.init();

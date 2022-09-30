@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.DecibelSoundEvents;
 
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -30,7 +31,7 @@ public abstract class BowItemMixin extends Item {
 
     @Unique
     public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
-        if (!world.isClient()) {
+        if (!world.isClient() && Decibel.getConfig().addBowReadySound) {
             float useTime = getMaxUseTime(stack) - remainingUseTicks;
             if (useTime == 18) {
                 var soundEvent = EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0 ? DecibelSoundEvents.ITEM_BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.ITEM_BOW_PULL_FINISH;
@@ -50,7 +51,8 @@ public abstract class BowItemMixin extends Item {
     }
 
     @ModifyArg(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/sound/SoundEvent;Lnet/minecraft/sound/SoundCategory;FF)V"), index = 4)
-    private SoundEvent changeSound(SoundEvent sound) {
+    private SoundEvent changeSound(SoundEvent original) {
+        if (!Decibel.getConfig().updateBowShootSound) return original;
         if (lastStack != null && EnchantmentHelper.getLevel(Enchantments.FLAME, lastStack) > 0) {
             return DecibelSoundEvents.ITEM_BOW_SHOOT_FLAME;
         } else {

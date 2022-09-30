@@ -5,6 +5,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
 import net.minecraft.entity.Entity;
@@ -21,7 +22,7 @@ public abstract class PlayerEntityMixin {
     @Inject(at = @At("TAIL"), method = "attack", cancellable = true)
     public void playAttackSound(Entity target, CallbackInfo info) {
         ItemStack stack = mob.getStackInHand(Hand.MAIN_HAND);
-        if (ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
+        if (Decibel.getConfig().addWeaponSwingSounds && ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
             SoundEvent sound = ItemSoundModifications.SWINGING_MAP.get(stack.getItem()).get(stack);
             mob.getWorld().playSound(null, mob.getX(), mob.getY(), mob.getZ(), sound, mob.getSoundCategory(), 1, 1);
         }
