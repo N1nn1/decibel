@@ -23,11 +23,11 @@ public class DecibelSounds {
     public static final SoundEvent BOW_SHOOT = DecibelSounds.register("item.bow.shoot");
     public static final SoundEvent BOW_SHOOT_FLAME = DecibelSounds.register("item.bow.shoot_flame");
 
-    public static final SoundEvent METAL_SWORD_SWING = DecibelSounds.register("item.sword.swing");
-    public static final SoundEvent METAL_PICKAXE_SWING = DecibelSounds.register("item.pickaxe.swing");
-    public static final SoundEvent METAL_AXE_SWING = DecibelSounds.register("item.axe.swing");
-    public static final SoundEvent METAL_SHOVEL_SWING = DecibelSounds.register("item.shovel.swing");
-    public static final SoundEvent METAL_HOE_SWING = DecibelSounds.register("item.hoe.swing");
+    public static final SoundEvent METAL_SWORD_SWING = DecibelSounds.register("item.metal_sword.swing");
+    public static final SoundEvent METAL_PICKAXE_SWING = DecibelSounds.register("item.metal_pickaxe.swing");
+    public static final SoundEvent METAL_AXE_SWING = DecibelSounds.register("item.metal_axe.swing");
+    public static final SoundEvent METAL_SHOVEL_SWING = DecibelSounds.register("item.metal_shovel.swing");
+    public static final SoundEvent METAL_HOE_SWING = DecibelSounds.register("item.metal_hoe.swing");
 
     public static final SoundEvent SHIELD_USE = DecibelSounds.register("item.shield.use");
 

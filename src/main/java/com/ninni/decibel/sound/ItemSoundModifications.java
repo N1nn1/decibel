@@ -21,23 +21,24 @@ public class ItemSoundModifications {
         BEGIN_USING_SOUNDS.put(item, function);
     }
 
-    static void addBeginUsing(Item item, SoundEvent soundEvent) {
-        BEGIN_USING_SOUNDS.put(item, (stack) -> soundEvent);
+    static void addBeginUsing(Item item, SoundEvent sound) {
+        addBeginUsing(item, (stack) -> sound);
     }
 
     static void addAttack(Item item, SoundEventFunction<ItemStack> function) {
         ATTACK_SOUNDS.put(item, function);
     }
-    static void addAttack(Item item, SoundEvent soundEvent) {
-        ATTACK_SOUNDS.put(item, (stack) -> soundEvent);
+
+    static void addAttack(Item item, SoundEvent sound) {
+        addAttack(item, (stack) -> sound);
     }
 
     static void addEating(Item item, SoundEventFunction<ItemStack> function) {
         EATING_SOUNDS.put(item, function);
     }
 
-    static void addEating(Item item, SoundEvent soundEvent) {
-        EATING_SOUNDS.put(item, (stack) -> soundEvent);
+    static void addEating(Item item, SoundEvent sound) {
+        addEating(item, (stack) -> sound);
     }
 
     private static void addAttackSounds() {

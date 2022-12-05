@@ -1,4 +1,203 @@
 {
+    "armor.chainmail.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/chainmail/step1",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/chainmail/step2",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/chainmail/step3",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/chainmail/step4",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/chainmail/step5",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/chainmail/step6",
+                "pitch": 0.9,
+                "volume": 0.1
+            }
+        ]
+    },
+    "armor.diamond.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/diamond/step1",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step2",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step3",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step4",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step5",
+                "pitch": 0.9,
+                "volume": 0.2
+            },
+            {
+                "name": "decibel:armor/diamond/step6",
+                "pitch": 0.9,
+                "volume": 0.2
+            }
+        ]
+    },
+    "armor.gold.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/gold/step1",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/gold/step2",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/gold/step3",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/gold/step4",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/gold/step5",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/gold/step6",
+                "pitch": 0.9,
+                "volume": 0.1
+            }
+        ]
+    },
+    "armor.iron.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/iron/step1",
+                "pitch": 0.9,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step2",
+                "pitch": 0.9,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step3",
+                "pitch": 0.8,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step4",
+                "pitch": 0.5,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step4",
+                "pitch": 0.9,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step5",
+                "pitch": 0.6,
+                "volume": 0.05
+            },
+            {
+                "name": "decibel:armor/iron/step5",
+                "pitch": 0.9,
+                "volume": 0.05
+            }
+        ]
+    },
+    "armor.leather.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/leather/step1",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/leather/step2",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/leather/step3",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/leather/step4",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/leather/step5",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/leather/step6",
+                "pitch": 0.9,
+                "volume": 0.1
+            }
+        ]
+    },
+    "armor.netherite.step": {
+        "sounds": [
+            {
+                "name": "decibel:armor/netherite/step1",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/netherite/step2",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/netherite/step3",
+                "pitch": 0.9,
+                "volume": 0.1
+            },
+            {
+                "name": "decibel:armor/netherite/step4",
+                "pitch": 0.9,
+                "volume": 0.1
+            }
+        ]
+    },
     "block.cactus.break": {
         "sounds": [
             {
@@ -559,66 +758,6 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
-    "block.podzol.break": {
-        "sounds": [
-            {
-                "name": "decibel:block/podzol/break1",
-                "volume": 0.6,
-                "pitch": 1.3
-            },
-            {
-                "name": "decibel:block/podzol/break2",
-                "volume": 0.6,
-                "pitch": 1.3
-            },
-            {
-                "name": "decibel:block/podzol/break3",
-                "volume": 0.6,
-                "pitch": 1.3
-            },
-            {
-                "name": "decibel:block/podzol/break4",
-                "volume": 0.6,
-                "pitch": 1.3
-            }
-        ],
-        "subtitle": "subtitles.block.generic.break"
-    },
-    "block.podzol.fall": {
-        "sounds": [
-            {
-                "name": "decibel:block.podzol.break",
-                "type": "event"
-            }
-        ]
-    },
-    "block.podzol.hit": {
-        "sounds": [
-            {
-                "name": "decibel:block.dirt.hit",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.hit"
-    },
-    "block.podzol.place": {
-        "sounds": [
-            {
-                "name": "decibel:block.podzol.break",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.place"
-    },
-    "block.podzol.step": {
-        "sounds": [
-            "decibel:block/podzol/step1",
-            "decibel:block/podzol/step2",
-            "decibel:block/podzol/step3",
-            "decibel:block/podzol/step4"
-        ],
-        "subtitle": "subtitles.block.generic.footsteps"
-    },
     "block.gravel.break": {
         "sounds": [
             {
@@ -805,6 +944,112 @@
                 "name": "minecraft:block.metal.step",
                 "type": "event"
             }
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.podzol.break": {
+        "sounds": [
+            {
+                "name": "decibel:block/podzol/break1",
+                "pitch": 1.3,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break2",
+                "pitch": 1.3,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break3",
+                "pitch": 1.3,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:block/podzol/break4",
+                "pitch": 1.3,
+                "volume": 0.6
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.podzol.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.podzol.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.podzol.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.dirt.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.podzol.place": {
+        "sounds": [
+            {
+                "name": "decibel:block.podzol.break",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.podzol.step": {
+        "sounds": [
+            "decibel:block/podzol/step1",
+            "decibel:block/podzol/step2",
+            "decibel:block/podzol/step3",
+            "decibel:block/podzol/step4"
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
+    "block.sand.break": {
+        "sounds": [
+            "decibel:block/sand/break1",
+            "decibel:block/sand/break2",
+            "decibel:block/sand/break3",
+            "decibel:block/sand/break4"
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.sand.fall": {
+        "sounds": [
+            {
+                "name": "minecraft:block.sand.fall",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.fall"
+    },
+    "block.sand.hit": {
+        "sounds": [
+            {
+                "name": "minecraft:block.sand.hit",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.sand.place": {
+        "sounds": [
+            "decibel:block/sand/place1",
+            "decibel:block/sand/place2",
+            "decibel:block/sand/place3",
+            "decibel:block/sand/place4"
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.sand.step": {
+        "sounds": [
+            "decibel:block/sand/step1",
+            "decibel:block/sand/step2",
+            "decibel:block/sand/step3",
+            "decibel:block/sand/step4",
+            "decibel:block/sand/step5"
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
@@ -1026,152 +1271,6 @@
         ],
         "subtitle": "subtitles.block.generic.footsteps"
     },
-    "block.sand.step": {
-        "sounds": [
-            "decibel:block/sand/step1",
-            "decibel:block/sand/step2",
-            "decibel:block/sand/step3",
-            "decibel:block/sand/step4",
-            "decibel:block/sand/step5"
-        ],
-        "subtitle": "subtitles.block.generic.footsteps"
-    },
-    "block.sand.break": {
-        "sounds": [
-            "decibel:block/sand/break1",
-            "decibel:block/sand/break2",
-            "decibel:block/sand/break3",
-            "decibel:block/sand/break4"
-        ],
-        "subtitle": "subtitles.block.generic.break"
-    },
-    "block.sand.place": {
-        "sounds": [
-            "decibel:block/sand/place1",
-            "decibel:block/sand/place2",
-            "decibel:block/sand/place3",
-            "decibel:block/sand/place4"
-        ],
-        "subtitle": "subtitles.block.generic.place"
-    },
-    "block.sand.hit": {
-        "sounds": [
-            {
-                "name": "minecraft:block.sand.hit",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.hit"
-    },
-    "block.sand.fall": {
-        "sounds": [
-            {
-                "name": "minecraft:block.sand.fall",
-                "type": "event"
-            }
-        ],
-        "subtitle": "subtitles.block.generic.fall"
-    },
-    "item.sword.swing": {
-        "sounds": [
-            {
-                "name": "decibel:item/sword/swing1",
-                "pitch": 1.0,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/sword/swing2",
-                "pitch": 1.0,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/sword/swing3",
-                "pitch": 1.0,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/sword/swing4",
-                "pitch": 1.0,
-                "volume": 0.8
-            }
-        ]
-    },
-    "item.pickaxe.swing": {
-        "sounds": [
-            {
-                "name": "decibel:item/pickaxe/swing1",
-                "pitch": 1.6,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/pickaxe/swing2",
-                "pitch": 1.6,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/pickaxe/swing3",
-                "pitch": 1.6,
-                "volume": 0.6
-            }
-        ]
-    },
-    "item.shovel.swing": {
-        "sounds": [
-            {
-                "name": "decibel:item/pickaxe/swing1",
-                "pitch": 1.4,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/pickaxe/swing2",
-                "pitch": 1.4,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/pickaxe/swing3",
-                "pitch": 1.4,
-                "volume": 0.8
-            }
-        ]
-    },
-    "item.hoe.swing": {
-        "sounds": [
-            {
-                "name": "decibel:item/pickaxe/swing1",
-                "pitch": 2.2,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/pickaxe/swing2",
-                "pitch": 2.2,
-                "volume": 0.6
-            },
-            {
-                "name": "decibel:item/pickaxe/swing3",
-                "pitch": 2.2,
-                "volume": 0.6
-            }
-        ]
-    },
-    "item.axe.swing": {
-        "sounds": [
-            {
-                "name": "decibel:item/axe/swing1",
-                "pitch": 1.0,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/axe/swing2",
-                "pitch": 1.0,
-                "volume": 0.8
-            },
-            {
-                "name": "decibel:item/axe/swing3",
-                "pitch": 1.0,
-                "volume": 0.8
-            }
-        ]
-    },
     "item.apple.eat": {
         "sounds": [
             "decibel:item/apple/eat1",
@@ -1179,40 +1278,6 @@
             "decibel:item/apple/eat3"
         ],
         "subtitle": "subtitles.entity.generic.eat"
-    },
-    "item.bread.eat": {
-        "sounds": [
-            {
-                "name": "decibel:item/bread/eat1",
-                "pitch": 0.85,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:item/bread/eat2",
-                "pitch": 0.85,
-                "volume": 0.3
-            },
-            {
-                "name": "decibel:item/bread/eat3",
-                "pitch": 0.85,
-                "volume": 0.3
-            }
-        ],
-        "subtitle": "subtitles.entity.generic.eat"
-    },
-    "item.chorus.eat": {
-        "sounds": [
-            "decibel:item/chorus/eat1",
-            "decibel:item/chorus/eat2",
-            "decibel:item/chorus/eat3"
-        ],
-        "subtitle": "subtitles.entity.generic.eat"
-    },
-    "item.chorus.burp": {
-        "sounds": [
-            "decibel:item/chorus/burp"
-        ],
-        "subtitle": "decibel.item.chorus.burp"
     },
     "item.bow.pull": {
         "sounds": [
@@ -1258,14 +1323,6 @@
             }
         ]
     },
-    "item.bow.pull_flame": {
-        "sounds": [
-            {
-                "name": "decibel:item.bow.pull",
-                "type": "event"
-            }
-        ]
-    },
     "item.bow.pull_finish": {
         "sounds": [
             {
@@ -1291,6 +1348,14 @@
                 "name": "decibel:item/bow/pull_finish_flame3",
                 "pitch": 1.1,
                 "volume": 0.8
+            }
+        ]
+    },
+    "item.bow.pull_flame": {
+        "sounds": [
+            {
+                "name": "decibel:item.bow.pull",
+                "type": "event"
             }
         ]
     },
@@ -1334,6 +1399,40 @@
         ],
         "subtitle": "subtitles.entity.arrow.shoot"
     },
+    "item.bread.eat": {
+        "sounds": [
+            {
+                "name": "decibel:item/bread/eat1",
+                "pitch": 0.85,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/bread/eat2",
+                "pitch": 0.85,
+                "volume": 0.3
+            },
+            {
+                "name": "decibel:item/bread/eat3",
+                "pitch": 0.85,
+                "volume": 0.3
+            }
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
+    },
+    "item.chorus.burp": {
+        "sounds": [
+            "decibel:item/chorus/burp"
+        ],
+        "subtitle": "decibel.item.chorus.burp"
+    },
+    "item.chorus.eat": {
+        "sounds": [
+            "decibel:item/chorus/eat1",
+            "decibel:item/chorus/eat2",
+            "decibel:item/chorus/eat3"
+        ],
+        "subtitle": "subtitles.entity.generic.eat"
+    },
     "item.ender_pearl.throw": {
         "sounds": [
             {
@@ -1357,6 +1456,106 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
+    "item.metal_axe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/axe/swing1",
+                "pitch": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/axe/swing2",
+                "pitch": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/axe/swing3",
+                "pitch": 1,
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.metal_hoe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 2.2,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 2.2,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 2.2,
+                "volume": 0.6
+            }
+        ]
+    },
+    "item.metal_pickaxe.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 1.6,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 1.6,
+                "volume": 0.6
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 1.6,
+                "volume": 0.6
+            }
+        ]
+    },
+    "item.metal_shovel.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/pickaxe/swing1",
+                "pitch": 1.4,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/pickaxe/swing2",
+                "pitch": 1.4,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/pickaxe/swing3",
+                "pitch": 1.4,
+                "volume": 0.8
+            }
+        ]
+    },
+    "item.metal_sword.swing": {
+        "sounds": [
+            {
+                "name": "decibel:item/sword/swing1",
+                "pitch": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/sword/swing2",
+                "pitch": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/sword/swing3",
+                "pitch": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "decibel:item/sword/swing4",
+                "pitch": 1,
+                "volume": 0.8
+            }
+        ]
+    },
     "item.shield.use": {
         "sounds": [
             {
@@ -1366,7 +1565,7 @@
             },
             {
                 "name": "decibel:item/shield/raise",
-                "pitch": 1.0,
+                "pitch": 1,
                 "volume": 0.4
             },
             {
@@ -1376,204 +1575,5 @@
             }
         ],
         "subtitle": "decibel.item.shield.use"
-    },
-    "armor.iron.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/iron/step1",
-                "pitch": 0.9,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step2",
-                "pitch": 0.9,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step3",
-                "pitch": 0.8,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step4",
-                "pitch": 0.9,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step5",
-                "pitch": 0.9,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step4",
-                "pitch": 0.5,
-                "volume": 0.05
-            },
-            {
-                "name": "decibel:armor/iron/step5",
-                "pitch": 0.6,
-                "volume": 0.05
-            }
-        ]
-    },
-    "armor.chainmail.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/chainmail/step1",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/chainmail/step2",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/chainmail/step3",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/chainmail/step4",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/chainmail/step5",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/chainmail/step6",
-                "pitch": 0.9,
-                "volume": 0.1
-            }
-        ]
-    },
-    "armor.diamond.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/diamond/step1",
-                "pitch": 0.9,
-                "volume": 0.2
-            },
-            {
-                "name": "decibel:armor/diamond/step2",
-                "pitch": 0.9,
-                "volume": 0.2
-            },
-            {
-                "name": "decibel:armor/diamond/step3",
-                "pitch": 0.9,
-                "volume": 0.2
-            },
-            {
-                "name": "decibel:armor/diamond/step4",
-                "pitch": 0.9,
-                "volume": 0.2
-            },
-            {
-                "name": "decibel:armor/diamond/step5",
-                "pitch": 0.9,
-                "volume": 0.2
-            },
-            {
-                "name": "decibel:armor/diamond/step6",
-                "pitch": 0.9,
-                "volume": 0.2
-            }
-        ]
-    },
-    "armor.netherite.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/netherite/step1",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/netherite/step2",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/netherite/step3",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/netherite/step4",
-                "pitch": 0.9,
-                "volume": 0.1
-            }
-        ]
-    },
-    "armor.gold.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/gold/step1",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/gold/step2",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/gold/step3",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/gold/step4",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/gold/step5",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/gold/step6",
-                "pitch": 0.9,
-                "volume": 0.1
-            }
-        ]
-    },
-    "armor.leather.step": {
-        "sounds": [
-            {
-                "name": "decibel:armor/leather/step1",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/leather/step2",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/leather/step3",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/leather/step4",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/leather/step5",
-                "pitch": 0.9,
-                "volume": 0.1
-            },
-            {
-                "name": "decibel:armor/leather/step6",
-                "pitch": 0.9,
-                "volume": 0.1
-            }
-        ]
     }
 }
