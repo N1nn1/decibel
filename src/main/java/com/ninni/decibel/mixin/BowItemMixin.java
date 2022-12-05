@@ -9,20 +9,19 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.DecibelSoundEvents;
-
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.BowItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.world.World;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
 
 @Mixin(BowItem.class)
 public abstract class BowItemMixin extends Item {
-    public BowItemMixin(Settings settings) {
+    public BowItemMixin(Properties settings) {
         super(settings);
     }
 
@@ -30,33 +29,33 @@ public abstract class BowItemMixin extends Item {
     private ItemStack lastStack;
 
     @Unique
-    public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
-        if (!world.isClient() && Decibel.getConfig().addBowReadySound) {
-            float useTime = getMaxUseTime(stack) - remainingUseTicks;
+    public void onUseTick(Level world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
+        if (!world.isClientSide() && Decibel.getConfig().addBowReadySound) {
+            float useTime = getUseDuration(stack) - remainingUseTicks;
             if (useTime == 18) {
-                var soundEvent = EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0 ? DecibelSoundEvents.ITEM_BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.ITEM_BOW_PULL_FINISH;
-                world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundCategory.PLAYERS, 1, 1);
+                var soundEvent = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, stack) > 0 ? DecibelSoundEvents.BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.BOW_PULL_FINISH;
+                world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundSource.PLAYERS, 1, 1);
             }
         }
     }
 
-    @Inject(method = "onStoppedUsing", at = @At(value = "HEAD"))
-    private void getStack(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
+    @Inject(method = "releaseUsing", at = @At(value = "HEAD"))
+    private void D$getStack(ItemStack stack, Level world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
         lastStack = stack;
     }
 
-    @Inject(method = "onStoppedUsing", at = @At(value = "TAIL"))
-    private void forgetStack(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
+    @Inject(method = "releaseUsing", at = @At(value = "TAIL"))
+    private void D$forgetStack(ItemStack stack, Level world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
         lastStack = null;
     }
 
-    @ModifyArg(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/sound/SoundEvent;Lnet/minecraft/sound/SoundCategory;FF)V"), index = 4)
-    private SoundEvent changeSound(SoundEvent original) {
+    @ModifyArg(method = "releaseUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V"), index = 4)
+    private SoundEvent D$changeSound(SoundEvent original) {
         if (!Decibel.getConfig().updateBowShootSound) return original;
-        if (lastStack != null && EnchantmentHelper.getLevel(Enchantments.FLAME, lastStack) > 0) {
-            return DecibelSoundEvents.ITEM_BOW_SHOOT_FLAME;
+        if (lastStack != null && EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, lastStack) > 0) {
+            return DecibelSoundEvents.BOW_SHOOT_FLAME;
         } else {
-            return DecibelSoundEvents.ITEM_BOW_SHOOT;
+            return DecibelSoundEvents.BOW_SHOOT;
         }
     }
 }

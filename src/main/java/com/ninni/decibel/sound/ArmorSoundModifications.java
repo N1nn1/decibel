@@ -3,15 +3,13 @@ package com.ninni.decibel.sound;
 import static com.ninni.decibel.Decibel.MOD_ID;
 
 import java.util.Map;
-
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
 import com.google.common.collect.Maps;
 import com.ninni.decibel.SoundEventFunction;
-
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ArmorMaterials;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class ArmorSoundModifications {
 
@@ -22,7 +20,7 @@ public class ArmorSoundModifications {
     }
 
     public static SoundEvent createArmorSound(String armor, String type) {
-        Identifier identifier = new Identifier(MOD_ID, "armor." + armor + "." + type);
+        ResourceLocation identifier = new ResourceLocation(MOD_ID, "armor." + armor + "." + type);
         return Registry.register(Registry.SOUND_EVENT, identifier, new SoundEvent(identifier));
     }
 

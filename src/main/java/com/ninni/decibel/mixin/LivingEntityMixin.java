@@ -1,6 +1,7 @@
 package com.ninni.decibel.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -9,27 +10,27 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.ItemSoundModifications;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.util.Hand;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
 
+    @Unique
     private final LivingEntity mob = (LivingEntity) (Object) this;
 
-    // dunno if this works in multiplayer atm, needs to be tested
-    @Inject(at = @At("TAIL"), method = "setCurrentHand")
-    public void setCurrentHand(Hand hand, CallbackInfo info) {
-        ItemStack stack = mob.getStackInHand(hand);
+    @Inject(at = @At("TAIL"), method = "startUsingItem")
+    public void D$playUsingSound(InteractionHand hand, CallbackInfo info) {
+        ItemStack stack = mob.getItemInHand(hand);
         if (Decibel.getConfig().addItemUseSounds && ItemSoundModifications.USING_MAP.containsKey(stack.getItem())) {
             mob.playSound(ItemSoundModifications.USING_MAP.get(stack.getItem()).get(stack), 1, 1);
         }
     }
 
-    @Inject(at = @At("TAIL"), method = "getEatSound", cancellable = true)
-    public void modifyEatSound(ItemStack stack, CallbackInfoReturnable<SoundEvent> info) {
+    @Inject(at = @At("TAIL"), method = "getEatingSound", cancellable = true)
+    public void D$modifyEatingSound(ItemStack stack, CallbackInfoReturnable<SoundEvent> info) {
         if (Decibel.getConfig().updateEatingSounds && ItemSoundModifications.EATING_MAP.containsKey(stack.getItem())) {
             info.setReturnValue(ItemSoundModifications.EATING_MAP.get(stack.getItem()).get(stack));
         }

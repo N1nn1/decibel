@@ -1,8 +1,8 @@
 package com.ninni.decibel;
 
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.world.level.block.SoundType;
 
 @FunctionalInterface
 public interface SoundGroupFunction<T> {
-    BlockSoundGroup get(T value);
+    SoundType get(T value);
 }

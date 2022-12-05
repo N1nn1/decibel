@@ -7,16 +7,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.BlockSoundModifications;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
 
 @Mixin(Block.class)
 public class BlockMixin {
 
-    @Inject(at = @At("HEAD"), method = "getSoundGroup", cancellable = true)
-    private void getModifiedSoundgroup(BlockState state, CallbackInfoReturnable<BlockSoundGroup> info) {
+    @Inject(at = @At("HEAD"), method = "getSoundType", cancellable = true)
+    private void D$modifySoundType(BlockState state, CallbackInfoReturnable<SoundType> info) {
         Block block = (Block) (Object) this;
         if (Decibel.getConfig().updateBlockSounds && BlockSoundModifications.SOUND_GROUP_MAP.containsKey(block)) {
             info.setReturnValue(BlockSoundModifications.SOUND_GROUP_MAP.get(block).get(state));

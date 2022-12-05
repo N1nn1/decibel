@@ -1,15 +1,13 @@
 package com.ninni.decibel.sound;
 
 import java.util.Map;
-
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FarmBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
 import com.google.common.collect.Maps;
 import com.ninni.decibel.SoundGroupFunction;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FarmlandBlock;
-import net.minecraft.sound.BlockSoundGroup;
 
 public class BlockSoundModifications {
 
@@ -19,7 +17,7 @@ public class BlockSoundModifications {
         SOUND_GROUP_MAP.put(block, function);
     }
 
-    static void addBlock(Block block, BlockSoundGroup soundGroup) {
+    static void addBlock(Block block, SoundType soundGroup) {
         SOUND_GROUP_MAP.put(block, (state) -> soundGroup);
     }
 
@@ -66,7 +64,7 @@ public class BlockSoundModifications {
         addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
         addBlock(Blocks.PODZOL, DecibelSoundGroups.PODZOL);
 
-        addBlock(Blocks.FARMLAND, (state) -> state.get(FarmlandBlock.MOISTURE) == 7 ? DecibelSoundGroups.WET_FARMLAND : DecibelSoundGroups.FARMLAND);
+        addBlock(Blocks.FARMLAND, (state) -> state.getValue(FarmBlock.MOISTURE) == 7 ? DecibelSoundGroups.WET_FARMLAND : DecibelSoundGroups.FARMLAND);
 
         addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
         addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);

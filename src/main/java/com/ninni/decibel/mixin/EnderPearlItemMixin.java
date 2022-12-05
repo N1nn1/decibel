@@ -7,16 +7,15 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 import com.ninni.decibel.Decibel;
 import com.ninni.decibel.sound.DecibelSoundEvents;
+import net.minecraft.world.item.EnderpearlItem;
 
-import net.minecraft.item.EnderPearlItem;
-
-@Mixin(EnderPearlItem.class)
+@Mixin(EnderpearlItem.class)
 public abstract class EnderPearlItemMixin {
 
-    @ModifyArgs(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;playSound(Lnet/minecraft/entity/player/PlayerEntity;DDDLnet/minecraft/sound/SoundEvent;Lnet/minecraft/sound/SoundCategory;FF)V"))
-    private void changeEnderPearlSound(Args args) {
+    @ModifyArgs(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V"))
+    private void D$playSound(Args args) {
         if (Decibel.getConfig().updateEnderPearlThrowSound) {
-            args.set(4, DecibelSoundEvents.ITEM_ENDER_PEARL_THROW);
+            args.set(4, DecibelSoundEvents.ENDER_PEARL_THROW);
             args.set(6, 1F);
             args.set(7, 1F);
         }
