@@ -5,6 +5,7 @@
     "text.autoconfig.decibel.title": "Decibel Configuration",
     
     "text.autoconfig.decibel.option.addArmorStepSounds": "Add Armor Stepping Sounds",
+    "text.autoconfig.decibel.option.armorStepVolume": "Armor Stepping Sounds Volume",
     "text.autoconfig.decibel.option.addBowReadySound": "Add Bow Pull Finish Sound",
     "text.autoconfig.decibel.option.addItemUseSounds": "Add Item Use Sounds",
     "text.autoconfig.decibel.option.addWeaponSwingSounds": "Add Weapon Swing Sounds",
