@@ -1,13 +1,15 @@
 package com.ninni.decibel.sound;
 
 import java.util.Map;
+
+import com.google.common.collect.Maps;
+import com.ninni.decibel.util.SoundGroupFunction;
+
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import com.google.common.collect.Maps;
-import com.ninni.decibel.SoundGroupFunction;
 
 public class BlockSoundModifications {
 
@@ -21,65 +23,60 @@ public class BlockSoundModifications {
         SOUND_GROUP_MAP.put(block, (state) -> soundGroup);
     }
 
-    static void addSapling(Block block) {
-        addBlock(block, DecibelSoundGroups.SAPLING);
-    }
+    static {
+        addBlock(Blocks.GRASS, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.DEAD_BUSH, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.TALL_GRASS, DecibelSoundTypes.LARGE_PLANT);
 
-    public static void init() {
-        addBlock(Blocks.GRASS, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.DEAD_BUSH, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.TALL_GRASS, DecibelSoundGroups.LARGE_PLANT);
+        addBlock(Blocks.ALLIUM, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.AZURE_BLUET, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.BLUE_ORCHID, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.CORNFLOWER, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.DANDELION, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.LILY_OF_THE_VALLEY, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.ORANGE_TULIP, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.OXEYE_DAISY, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.PINK_TULIP, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.POPPY, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.RED_TULIP, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.WHITE_TULIP, DecibelSoundTypes.SMALL_PLANT);
+        addBlock(Blocks.WITHER_ROSE, DecibelSoundTypes.SMALL_PLANT);
 
-        addBlock(Blocks.ALLIUM, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.AZURE_BLUET, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.BLUE_ORCHID, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.CORNFLOWER, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.DANDELION, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.LILY_OF_THE_VALLEY, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.ORANGE_TULIP, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.OXEYE_DAISY, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.PINK_TULIP, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.POPPY, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.RED_TULIP, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.WHITE_TULIP, DecibelSoundGroups.SMALL_PLANT);
-        addBlock(Blocks.WITHER_ROSE, DecibelSoundGroups.SMALL_PLANT);
+        addBlock(Blocks.LILAC, DecibelSoundTypes.LARGE_PLANT);
+        addBlock(Blocks.PEONY, DecibelSoundTypes.LARGE_PLANT);
+        addBlock(Blocks.ROSE_BUSH, DecibelSoundTypes.LARGE_PLANT);
+        addBlock(Blocks.SUNFLOWER, DecibelSoundTypes.LARGE_PLANT);
 
-        addBlock(Blocks.LILAC, DecibelSoundGroups.LARGE_PLANT);
-        addBlock(Blocks.PEONY, DecibelSoundGroups.LARGE_PLANT);
-        addBlock(Blocks.ROSE_BUSH, DecibelSoundGroups.LARGE_PLANT);
-        addBlock(Blocks.SUNFLOWER, DecibelSoundGroups.LARGE_PLANT);
+        addBlock(Blocks.FERN, DecibelSoundTypes.GENERIC_LEAVES);
+        addBlock(Blocks.LARGE_FERN, DecibelSoundTypes.GENERIC_LEAVES);
 
-        addBlock(Blocks.FERN, DecibelSoundGroups.GENERIC_LEAVES);
-        addBlock(Blocks.LARGE_FERN, DecibelSoundGroups.GENERIC_LEAVES);
+        addBlock(Blocks.CACTUS, DecibelSoundTypes.CACTUS);
 
-        addBlock(Blocks.CACTUS, DecibelSoundGroups.CACTUS);
+        addBlock(Blocks.GRASS_BLOCK, DecibelSoundTypes.GRASS_BLOCK);
+        addBlock(Blocks.COARSE_DIRT, DecibelSoundTypes.COARSE_DIRT);
+        addBlock(Blocks.SAND, DecibelSoundTypes.SAND);
+        addBlock(Blocks.RED_SAND, DecibelSoundTypes.SAND);
 
-        addBlock(Blocks.GRASS_BLOCK, DecibelSoundGroups.GRASS_BLOCK);
-        addBlock(Blocks.COARSE_DIRT, DecibelSoundGroups.COARSE_DIRT);
-        addBlock(Blocks.SAND, DecibelSoundGroups.SAND);
-        addBlock(Blocks.RED_SAND, DecibelSoundGroups.SAND);
+        addBlock(Blocks.DIRT, DecibelSoundTypes.DIRT);
+        addBlock(Blocks.DIRT_PATH, DecibelSoundTypes.DIRT);
+        addBlock(Blocks.PODZOL, DecibelSoundTypes.PODZOL);
 
+        addBlock(Blocks.FARMLAND, (state) -> state.getValue(FarmBlock.MOISTURE) == 7 ? DecibelSoundTypes.WET_FARMLAND : DecibelSoundTypes.FARMLAND);
 
-        addBlock(Blocks.DIRT, DecibelSoundGroups.DIRT);
-        addBlock(Blocks.DIRT_PATH, DecibelSoundGroups.DIRT);
-        addBlock(Blocks.PODZOL, DecibelSoundGroups.PODZOL);
+        addBlock(Blocks.CLAY, DecibelSoundTypes.CLAY);
+        addBlock(Blocks.GRAVEL, DecibelSoundTypes.GRAVEL);
 
-        addBlock(Blocks.FARMLAND, (state) -> state.getValue(FarmBlock.MOISTURE) == 7 ? DecibelSoundGroups.WET_FARMLAND : DecibelSoundGroups.FARMLAND);
+        addBlock(Blocks.COBWEB, DecibelSoundTypes.COBWEB);
 
-        addBlock(Blocks.CLAY, DecibelSoundGroups.CLAY);
-        addBlock(Blocks.GRAVEL, DecibelSoundGroups.GRAVEL);
+        addBlock(Blocks.GOLD_BLOCK, DecibelSoundTypes.METAL);
+        addBlock(Blocks.IRON_BLOCK, DecibelSoundTypes.METAL);
 
-        addBlock(Blocks.COBWEB, DecibelSoundGroups.COBWEB);
-
-        addBlock(Blocks.GOLD_BLOCK, DecibelSoundGroups.METAL);
-        addBlock(Blocks.IRON_BLOCK, DecibelSoundGroups.METAL);
-
-        addSapling(Blocks.ACACIA_SAPLING);
-        addSapling(Blocks.BIRCH_SAPLING);
-        addSapling(Blocks.DARK_OAK_SAPLING);
-        addSapling(Blocks.JUNGLE_SAPLING);
-        addSapling(Blocks.MANGROVE_PROPAGULE);
-        addSapling(Blocks.OAK_SAPLING);
-        addSapling(Blocks.SPRUCE_SAPLING);
+        addBlock(Blocks.ACACIA_SAPLING, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.BIRCH_SAPLING, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.DARK_OAK_SAPLING, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.JUNGLE_SAPLING, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.MANGROVE_PROPAGULE, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.OAK_SAPLING, DecibelSoundTypes.SAPLING);
+        addBlock(Blocks.SPRUCE_SAPLING, DecibelSoundTypes.SAPLING);
     }
 }

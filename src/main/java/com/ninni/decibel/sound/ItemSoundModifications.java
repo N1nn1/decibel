@@ -1,96 +1,100 @@
 package com.ninni.decibel.sound;
 
 import java.util.Map;
+
+import com.google.common.collect.Maps;
+import com.ninni.decibel.util.DecibelUtil;
+import com.ninni.decibel.util.SoundEventFunction;
+
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.enchantment.Enchantments;
-import com.google.common.collect.Maps;
-import com.ninni.decibel.SoundEventFunction;
 
 public class ItemSoundModifications {
 
-    public static final Map<Item, SoundEventFunction<ItemStack>> USING_MAP = Maps.newHashMap();
-    public static final Map<Item, SoundEventFunction<ItemStack>> EATING_MAP = Maps.newHashMap();
-    public static final Map<Item, SoundEventFunction<ItemStack>> SWINGING_MAP = Maps.newHashMap();
+    public static final Map<Item, SoundEventFunction<ItemStack>> BEGIN_USING_SOUNDS = Maps.newHashMap();
+    public static final Map<Item, SoundEventFunction<ItemStack>> EATING_SOUNDS = Maps.newHashMap();
+    public static final Map<Item, SoundEventFunction<ItemStack>> ATTACK_SOUNDS = Maps.newHashMap();
 
-    static void addUse(Item item, SoundEventFunction<ItemStack> function) {
-        USING_MAP.put(item, function);
+    static void addBeginUsing(Item item, SoundEventFunction<ItemStack> function) {
+        BEGIN_USING_SOUNDS.put(item, function);
     }
 
-    static void addUse(Item item, SoundEvent soundEvent) {
-        USING_MAP.put(item, (stack) -> soundEvent);
+    static void addBeginUsing(Item item, SoundEvent soundEvent) {
+        BEGIN_USING_SOUNDS.put(item, (stack) -> soundEvent);
     }
 
-    static void addSwing(Item item, SoundEventFunction<ItemStack> function) {
-        SWINGING_MAP.put(item, function);
+    static void addAttack(Item item, SoundEventFunction<ItemStack> function) {
+        ATTACK_SOUNDS.put(item, function);
     }
-    static void addSwing(Item item, SoundEvent soundEvent) {
-        SWINGING_MAP.put(item, (stack) -> soundEvent);
-    }
-
-    static void addFood(Item item, SoundEventFunction<ItemStack> function) {
-        EATING_MAP.put(item, function);
+    static void addAttack(Item item, SoundEvent soundEvent) {
+        ATTACK_SOUNDS.put(item, (stack) -> soundEvent);
     }
 
-    static void addFood(Item item, SoundEvent soundEvent) {
-        EATING_MAP.put(item, (stack) -> soundEvent);
+    static void addEating(Item item, SoundEventFunction<ItemStack> function) {
+        EATING_SOUNDS.put(item, function);
     }
 
-    public static void init() {
-        addSwing(Items.WOODEN_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.WOODEN_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.WOODEN_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.WOODEN_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.WOODEN_HOE, DecibelSoundEvents.HOE_SWING);
+    static void addEating(Item item, SoundEvent soundEvent) {
+        EATING_SOUNDS.put(item, (stack) -> soundEvent);
+    }
 
-        addSwing(Items.STONE_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.STONE_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.STONE_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.STONE_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.STONE_HOE, DecibelSoundEvents.HOE_SWING);
+    private static void addAttackSounds() {
+        addAttack(Items.WOODEN_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.WOODEN_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.WOODEN_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.WOODEN_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.WOODEN_HOE, DecibelSounds.METAL_HOE_SWING);
 
-        addSwing(Items.IRON_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.IRON_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.IRON_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.IRON_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.IRON_HOE, DecibelSoundEvents.HOE_SWING);
+        addAttack(Items.STONE_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.STONE_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.STONE_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.STONE_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.STONE_HOE, DecibelSounds.METAL_HOE_SWING);
 
-        addSwing(Items.GOLDEN_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.GOLDEN_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.GOLDEN_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.GOLDEN_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.GOLDEN_HOE, DecibelSoundEvents.HOE_SWING);
+        addAttack(Items.IRON_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.IRON_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.IRON_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.IRON_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.IRON_HOE, DecibelSounds.METAL_HOE_SWING);
 
-        addSwing(Items.DIAMOND_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.DIAMOND_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.DIAMOND_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.DIAMOND_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.DIAMOND_HOE, DecibelSoundEvents.HOE_SWING);
+        addAttack(Items.GOLDEN_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.GOLDEN_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.GOLDEN_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.GOLDEN_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.GOLDEN_HOE, DecibelSounds.METAL_HOE_SWING);
+
+        addAttack(Items.DIAMOND_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.DIAMOND_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.DIAMOND_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.DIAMOND_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.DIAMOND_HOE, DecibelSounds.METAL_HOE_SWING);
         
-        addSwing(Items.NETHERITE_SWORD, DecibelSoundEvents.SWORD_SWING);
-        addSwing(Items.NETHERITE_PICKAXE, DecibelSoundEvents.PICKAXE_SWING);
-        addSwing(Items.NETHERITE_AXE, DecibelSoundEvents.AXE_SWING);
-        addSwing(Items.NETHERITE_SHOVEL, DecibelSoundEvents.SHOVEL_SWING);
-        addSwing(Items.NETHERITE_HOE, DecibelSoundEvents.HOE_SWING);
+        addAttack(Items.NETHERITE_SWORD, DecibelSounds.METAL_SWORD_SWING);
+        addAttack(Items.NETHERITE_PICKAXE, DecibelSounds.METAL_PICKAXE_SWING);
+        addAttack(Items.NETHERITE_AXE, DecibelSounds.METAL_AXE_SWING);
+        addAttack(Items.NETHERITE_SHOVEL, DecibelSounds.METAL_SHOVEL_SWING);
+        addAttack(Items.NETHERITE_HOE, DecibelSounds.METAL_HOE_SWING);
+    }
 
-        addUse(Items.SHIELD, DecibelSoundEvents.SHIELD_USE);
+    private static void addBeginUsingSounds() {
+        addBeginUsing(Items.SHIELD, DecibelSounds.SHIELD_USE);
+        addBeginUsing(Items.BOW, ((stack) -> DecibelUtil.hasFlame(stack) ? DecibelSounds.BOW_PULL_FLAME : DecibelSounds.BOW_PULL));
+    }
 
-        addUse(Items.BOW, ((stack) -> {
-            if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, stack) > 0) {
-                return DecibelSoundEvents.BOW_PULL_FLAME;
-            } else {
-                return DecibelSoundEvents.BOW_PULL;
-            }
-        }));
+    private static void addEatingSounds() {
+        addEating(Items.APPLE, DecibelSounds.APPLE_EAT);
+        addEating(Items.GOLDEN_APPLE, DecibelSounds.GOLDEN_APPLE_EAT);
+        addEating(Items.ENCHANTED_GOLDEN_APPLE, DecibelSounds.GOLDEN_APPLE_EAT);
 
-        addFood(Items.APPLE, DecibelSoundEvents.APPLE_EAT);
-        addFood(Items.GOLDEN_APPLE, DecibelSoundEvents.GOLDEN_APPLE_EAT);
-        addFood(Items.ENCHANTED_GOLDEN_APPLE, DecibelSoundEvents.GOLDEN_APPLE_EAT);
+        addEating(Items.BREAD, DecibelSounds.BREAD_EAT);
+        addEating(Items.CHORUS_FRUIT, DecibelSounds.CHORUS_EAT);
+    }
 
-        addFood(Items.BREAD, DecibelSoundEvents.BREAD_EAT);
-        addFood(Items.CHORUS_FRUIT, DecibelSoundEvents.CHORUS_EAT);
+    static {
+        addAttackSounds();
+        addBeginUsingSounds();
+        addEatingSounds();
     }
 }

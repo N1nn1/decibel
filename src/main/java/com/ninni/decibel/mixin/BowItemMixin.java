@@ -8,15 +8,15 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.ninni.decibel.Decibel;
-import com.ninni.decibel.sound.DecibelSoundEvents;
+import com.ninni.decibel.sound.DecibelSounds;
+import com.ninni.decibel.util.DecibelUtil;
+
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 
 @Mixin(BowItem.class)
@@ -33,7 +33,7 @@ public abstract class BowItemMixin extends Item {
         if (!world.isClientSide() && Decibel.getConfig().addBowReadySound) {
             float useTime = getUseDuration(stack) - remainingUseTicks;
             if (useTime == 18) {
-                var soundEvent = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, stack) > 0 ? DecibelSoundEvents.BOW_PULL_FINISH_IGNITE : DecibelSoundEvents.BOW_PULL_FINISH;
+                var soundEvent = DecibelUtil.hasFlame(stack) ? DecibelSounds.BOW_PULL_FINISH_FLAME : DecibelSounds.BOW_PULL_FINISH;
                 world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundSource.PLAYERS, 1, 1);
             }
         }
@@ -52,10 +52,10 @@ public abstract class BowItemMixin extends Item {
     @ModifyArg(method = "releaseUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V"), index = 4)
     private SoundEvent D$changeSound(SoundEvent original) {
         if (!Decibel.getConfig().updateBowShootSound) return original;
-        if (lastStack != null && EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, lastStack) > 0) {
-            return DecibelSoundEvents.BOW_SHOOT_FLAME;
+        if (lastStack != null && DecibelUtil.hasFlame(lastStack)) {
+            return DecibelSounds.BOW_SHOOT_FLAME;
         } else {
-            return DecibelSoundEvents.BOW_SHOOT;
+            return DecibelSounds.BOW_SHOOT;
         }
     }
 }

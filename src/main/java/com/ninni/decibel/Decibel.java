@@ -1,7 +1,8 @@
 package com.ninni.decibel;
 
+import com.google.common.reflect.Reflection;
 import com.ninni.decibel.config.DecibelConfig;
-import com.ninni.decibel.resourcepacks.ModResourcePacks;
+import com.ninni.decibel.resourcepacks.DecibelResourcePacks;
 import com.ninni.decibel.sound.ArmorSoundModifications;
 import com.ninni.decibel.sound.BlockSoundModifications;
 import com.ninni.decibel.sound.ItemSoundModifications;
@@ -25,10 +26,14 @@ public class Decibel implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		BlockSoundModifications.init();
-		ItemSoundModifications.init();
-		ArmorSoundModifications.init();
-		ModResourcePacks.init();
+
+		Reflection.initialize(
+			BlockSoundModifications.class,
+			ItemSoundModifications.class,
+			ArmorSoundModifications.class,
+			DecibelResourcePacks.class
+		);
+
 		AutoConfig.register(DecibelConfig.class, JanksonConfigSerializer::new);
 	}
 }

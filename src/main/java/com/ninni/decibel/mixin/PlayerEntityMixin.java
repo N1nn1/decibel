@@ -22,10 +22,10 @@ public abstract class PlayerEntityMixin {
     private final Player mob = (Player) (Object) this;
 
     @Inject(at = @At("TAIL"), method = "attack", cancellable = true)
-    public void playAttackSound(Entity target, CallbackInfo info) {
+    public void D$playAttackSound(Entity target, CallbackInfo info) {
         ItemStack stack = mob.getItemInHand(InteractionHand.MAIN_HAND);
-        if (Decibel.getConfig().addWeaponSwingSounds && ItemSoundModifications.SWINGING_MAP.containsKey(stack.getItem())) {
-            SoundEvent sound = ItemSoundModifications.SWINGING_MAP.get(stack.getItem()).get(stack);
+        if (Decibel.getConfig().addWeaponSwingSounds && ItemSoundModifications.ATTACK_SOUNDS.containsKey(stack.getItem())) {
+            SoundEvent sound = ItemSoundModifications.ATTACK_SOUNDS.get(stack.getItem()).get(stack);
             mob.getLevel().playSound(null, mob.getX(), mob.getY(), mob.getZ(), sound, mob.getSoundSource(), 1, 1);
         }
     }

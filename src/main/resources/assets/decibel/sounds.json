@@ -1275,20 +1275,20 @@
             }
         ]
     },
-    "item.bow.pull_finish_ignite": {
+    "item.bow.pull_finish_flame": {
         "sounds": [
             {
-                "name": "decibel:item/bow/pull_finish_ignite1",
+                "name": "decibel:item/bow/pull_finish_flame1",
                 "pitch": 1.1,
                 "volume": 0.8
             },
             {
-                "name": "decibel:item/bow/pull_finish_ignite2",
+                "name": "decibel:item/bow/pull_finish_flame2",
                 "pitch": 1.1,
                 "volume": 0.8
             },
             {
-                "name": "decibel:item/bow/pull_finish_ignite3",
+                "name": "decibel:item/bow/pull_finish_flame3",
                 "pitch": 1.1,
                 "volume": 0.8
             }

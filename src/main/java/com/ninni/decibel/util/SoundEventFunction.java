@@ -1,4 +1,4 @@
-package com.ninni.decibel;
+package com.ninni.decibel.util;
 
 import net.minecraft.sounds.SoundEvent;
 

@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.Slice;
 
-import com.ninni.decibel.sound.DecibelSoundGroups;
+import com.ninni.decibel.sound.DecibelSoundTypes;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -30,6 +30,6 @@ public class BlocksMixin {
             )
     )
     private static SoundType D$AddLeaves() {
-        return DecibelSoundGroups.GENERIC_LEAVES;
+        return DecibelSoundTypes.GENERIC_LEAVES;
     }
 }
