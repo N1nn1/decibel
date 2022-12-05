@@ -32,6 +32,7 @@ public class DecibelSounds {
     public static final SoundEvent SHIELD_USE = DecibelSounds.register("item.shield.use");
 
     public static final SoundEvent ENDER_PEARL_THROW = DecibelSounds.register("item.ender_pearl.throw");
+    public static final SoundEvent ENDER_PEARL_LAND = DecibelSounds.register("item.ender_pearl.land");
 
     public static SoundEvent register(String name) {
         ResourceLocation id = Decibel.id(name);

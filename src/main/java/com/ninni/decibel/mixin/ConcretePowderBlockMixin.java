@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.ConcretePowderBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 @Mixin(ConcretePowderBlock.class)
-public class ConcretePowderMixin {
+public class ConcretePowderBlockMixin {
 
     @ModifyArg(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/FallingBlock;<init>(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V"))
     private static BlockBehaviour.Properties adjustDefaultState(BlockBehaviour.Properties settings) {

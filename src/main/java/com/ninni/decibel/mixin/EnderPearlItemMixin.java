@@ -10,7 +10,7 @@ import com.ninni.decibel.sound.DecibelSounds;
 import net.minecraft.world.item.EnderpearlItem;
 
 @Mixin(EnderpearlItem.class)
-public abstract class EnderPearlItemMixin {
+public abstract class EnderpearlItemMixin {
 
     @ModifyArgs(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V"))
     private void D$playSound(Args args) {

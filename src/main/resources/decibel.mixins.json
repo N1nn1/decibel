@@ -7,11 +7,12 @@
 		"BlockMixin",
 		"BlocksMixin",
 		"BowItemMixin",
-		"ConcretePowderMixin",
-		"EnderPearlItemMixin",
+		"ConcretePowderBlockMixin",
+		"EnderpearlItemMixin",
 		"EntityMixin",
 		"LivingEntityMixin",
-		"PlayerEntityMixin"
+		"PlayerMixin",
+		"ThrownEnderpearlMixin"
 	],
 	"client": [],
 	"injectors": {

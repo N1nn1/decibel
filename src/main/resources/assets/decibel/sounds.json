@@ -1452,6 +1452,21 @@
         ],
         "subtitle": "subtitles.entity.ender_pearl.throw"
     },
+    "item.ender_pearl.land": {
+        "sounds": [
+            {
+                "name": "decibel:item/ender_pearl/land1",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:item/ender_pearl/land2",
+                "pitch": 1,
+                "volume": 1
+            }
+        ],
+        "subtitle": "subtitles.entity.ender_pearl.land"
+    },
     "item.golden_apple.eat": {
         "sounds": [
             "decibel:item/golden_apple/eat1",
