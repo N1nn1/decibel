@@ -13,8 +13,8 @@ public class DecibelSounds {
     public static final SoundEvent APPLE_EAT = DecibelSounds.register("item.apple.eat");
     public static final SoundEvent GOLDEN_APPLE_EAT = DecibelSounds.register("item.golden_apple.eat");
     public static final SoundEvent BREAD_EAT = DecibelSounds.register("item.bread.eat");
-    public static final SoundEvent CHORUS_EAT = DecibelSounds.register("item.chorus.eat");
-    public static final SoundEvent CHORUS_BURP = DecibelSounds.register("item.chorus.burp");
+    public static final SoundEvent CHORUS_FRUIT_EAT = DecibelSounds.register("item.chorus_fruit.eat");
+    public static final SoundEvent CHORUS_FRUIT_BURP = DecibelSounds.register("item.chorus_fruit.burp");
 
     public static final SoundEvent BOW_PULL = DecibelSounds.register("item.bow.pull");
     public static final SoundEvent BOW_PULL_FLAME = DecibelSounds.register("item.bow.pull_flame");

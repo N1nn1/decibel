@@ -90,7 +90,7 @@ public class ItemSoundModifications {
         addEating(Items.ENCHANTED_GOLDEN_APPLE, DecibelSounds.GOLDEN_APPLE_EAT);
 
         addEating(Items.BREAD, DecibelSounds.BREAD_EAT);
-        addEating(Items.CHORUS_FRUIT, DecibelSounds.CHORUS_EAT);
+        addEating(Items.CHORUS_FRUIT, DecibelSounds.CHORUS_FRUIT_EAT);
     }
 
     static {

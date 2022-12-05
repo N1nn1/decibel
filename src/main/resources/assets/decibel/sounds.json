@@ -1321,7 +1321,8 @@
                 "pitch": 1.2,
                 "volume": 0.5
             }
-        ]
+        ],
+        "subtitle": "subtitles.decibel.bow.pull"
     },
     "item.bow.pull_finish": {
         "sounds": [
@@ -1330,7 +1331,8 @@
                 "pitch": 1.1,
                 "volume": 0.8
             }
-        ]
+        ],
+        "subtitle": "subtitles.decibel.bow.pull_finish"
     },
     "item.bow.pull_finish_flame": {
         "sounds": [
@@ -1349,7 +1351,8 @@
                 "pitch": 1.1,
                 "volume": 0.8
             }
-        ]
+        ],
+        "subtitle": "subtitles.decibel.bow.pull_finish"
     },
     "item.bow.pull_flame": {
         "sounds": [
@@ -1357,7 +1360,8 @@
                 "name": "decibel:item.bow.pull",
                 "type": "event"
             }
-        ]
+        ],
+        "subtitle": "subtitles.decibel.bow.pull"
     },
     "item.bow.shoot": {
         "sounds": [
@@ -1377,7 +1381,7 @@
                 "volume": 0.8
             }
         ],
-        "subtitle": "subtitles.entity.arrow.shoot"
+        "subtitle": "subtitles.decibel.bow.shoot"
     },
     "item.bow.shoot_flame": {
         "sounds": [
@@ -1397,7 +1401,7 @@
                 "volume": 0.92
             }
         ],
-        "subtitle": "subtitles.entity.arrow.shoot"
+        "subtitle": "subtitles.decibel.bow.shoot"
     },
     "item.bread.eat": {
         "sounds": [
@@ -1419,17 +1423,17 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
-    "item.chorus.burp": {
+    "item.chorus_fruit.burp": {
         "sounds": [
-            "decibel:item/chorus/burp"
+            "decibel:item/chorus_fruit/burp"
         ],
-        "subtitle": "decibel.item.chorus.burp"
+        "subtitle": "subtitles.decibel.chorus_fruit.burp"
     },
-    "item.chorus.eat": {
+    "item.chorus_fruit.eat": {
         "sounds": [
-            "decibel:item/chorus/eat1",
-            "decibel:item/chorus/eat2",
-            "decibel:item/chorus/eat3"
+            "decibel:item/chorus_fruit/eat1",
+            "decibel:item/chorus_fruit/eat2",
+            "decibel:item/chorus_fruit/eat3"
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
@@ -1574,6 +1578,6 @@
                 "volume": 0.4
             }
         ],
-        "subtitle": "decibel.item.shield.use"
+        "subtitle": "subtitles.decibel.shield.use"
     }
 }

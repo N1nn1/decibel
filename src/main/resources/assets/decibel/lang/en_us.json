@@ -14,6 +14,9 @@
     "text.autoconfig.decibel.option.updateEatingSounds": "Update Eating Sounds",
     "text.autoconfig.decibel.option.updateEnderPearlThrowSound": "Update Ender Pearl Throw Sound",
 
-    "decibel.item.shield.use": "Shield is raised",
-    "decibel.item.chorus.burp": "Player teleports"
+    "subtitles.decibel.chorus_fruit.burp": "Player teleports",
+    "subtitles.decibel.bow.pull": "Bow charges up",
+    "subtitles.decibel.bow.pull_finish": "Bow loads",
+    "subtitles.decibel.bow.shoot": "Bow shoots",
+    "subtitles.decibel.shield.use": "Shield is raised"
 }
