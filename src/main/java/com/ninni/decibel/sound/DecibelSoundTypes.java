@@ -22,6 +22,7 @@ public class DecibelSoundTypes {
     public static final SoundType METAL = Type.of("metal");
     public static final SoundType WET_FARMLAND = Type.of("wet_farmland");
     public static final SoundType SAND = Type.of("sand");
+    public static final SoundType SUGAR_CANE = Type.of("sugar_cane");
 
     private static class Type extends SoundType {
         private Type(String name) {

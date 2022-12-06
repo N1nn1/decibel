@@ -728,32 +728,32 @@
             {
                 "name": "decibel:block/grass_block/step1",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             },
             {
                 "name": "decibel:block/grass_block/step2",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             },
             {
                 "name": "decibel:block/grass_block/step3",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             },
             {
                 "name": "decibel:block/grass_block/step4",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             },
             {
                 "name": "decibel:block/grass_block/step5",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             },
             {
                 "name": "decibel:block/grass_block/step6",
                 "pitch": 1,
-                "volume": 0.6
+                "volume": 0.3
             }
         ],
         "subtitle": "subtitles.block.generic.footsteps"
@@ -1209,6 +1209,78 @@
         ],
         "subtitle": "subtitles.block.fire.ambient"
     },
+    "block.sugar_cane.break": {
+        "sounds": [
+            {
+                "name": "decibel:block.sugar_cane.place",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.break"
+    },
+    "block.sugar_cane.fall": {
+        "sounds": [
+            {
+                "name": "decibel:block.sugar_cane.break",
+                "type": "event"
+            }
+        ]
+    },
+    "block.sugar_cane.hit": {
+        "sounds": [
+            {
+                "name": "decibel:block.sugar_cane.step",
+                "type": "event"
+            }
+        ],
+        "subtitle": "subtitles.block.generic.hit"
+    },
+    "block.sugar_cane.place": {
+        "sounds": [
+            {
+                "name": "decibel:block/sugar_cane/place1",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:block/sugar_cane/place2",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:block/sugar_cane/place3",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:block/sugar_cane/place4",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:block/sugar_cane/place5",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:block/sugar_cane/place6",
+                "pitch": 1,
+                "volume": 1
+            }
+        ],
+        "subtitle": "subtitles.block.generic.place"
+    },
+    "block.sugar_cane.step": {
+        "sounds": [
+            "decibel:block/sugar_cane/step1",
+            "decibel:block/sugar_cane/step2",
+            "decibel:block/sugar_cane/step3",
+            "decibel:block/sugar_cane/step4",
+            "decibel:block/sugar_cane/step5",
+            "decibel:block/sugar_cane/step6"
+        ],
+        "subtitle": "subtitles.block.generic.footsteps"
+    },
     "block.wet_farmland.break": {
         "sounds": [
             {
@@ -1437,21 +1509,6 @@
         ],
         "subtitle": "subtitles.entity.generic.eat"
     },
-    "item.ender_pearl.throw": {
-        "sounds": [
-            {
-                "name": "decibel:item/ender_pearl/throw1",
-                "pitch": 1,
-                "volume": 1
-            },
-            {
-                "name": "decibel:item/ender_pearl/throw2",
-                "pitch": 1,
-                "volume": 1
-            }
-        ],
-        "subtitle": "subtitles.entity.ender_pearl.throw"
-    },
     "item.ender_pearl.land": {
         "sounds": [
             {
@@ -1466,6 +1523,21 @@
             }
         ],
         "subtitle": "subtitles.entity.ender_pearl.land"
+    },
+    "item.ender_pearl.throw": {
+        "sounds": [
+            {
+                "name": "decibel:item/ender_pearl/throw1",
+                "pitch": 1,
+                "volume": 1
+            },
+            {
+                "name": "decibel:item/ender_pearl/throw2",
+                "pitch": 1,
+                "volume": 1
+            }
+        ],
+        "subtitle": "subtitles.entity.ender_pearl.throw"
     },
     "item.golden_apple.eat": {
         "sounds": [

@@ -78,5 +78,7 @@ public class BlockSoundModifications {
         addBlock(Blocks.MANGROVE_PROPAGULE, DecibelSoundTypes.SAPLING);
         addBlock(Blocks.OAK_SAPLING, DecibelSoundTypes.SAPLING);
         addBlock(Blocks.SPRUCE_SAPLING, DecibelSoundTypes.SAPLING);
+
+        addBlock(Blocks.SUGAR_CANE, DecibelSoundTypes.SUGAR_CANE);
     }
 }
