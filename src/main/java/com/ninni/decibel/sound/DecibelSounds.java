@@ -34,6 +34,11 @@ public class DecibelSounds {
     public static final SoundEvent ENDER_PEARL_THROW = DecibelSounds.register("item.ender_pearl.throw");
     public static final SoundEvent ENDER_PEARL_LAND = DecibelSounds.register("item.ender_pearl.land");
 
+    public static final SoundEvent POTION_SPLASH = DecibelSounds.register("item.potion.splash");
+    public static final SoundEvent POTION_MAGIC = DecibelSounds.register("item.potion.magic");
+    public static final SoundEvent POTION_LINGER = DecibelSounds.register("item.potion.linger");
+    public static final SoundEvent EXP_SPLASH = DecibelSounds.register("item.experience_bottle.splash");
+
     public static SoundEvent register(String name) {
         ResourceLocation id = Decibel.id(name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));

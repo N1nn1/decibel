@@ -1,21 +1,23 @@
 {
-	"required": true,
-	"minVersion": "0.8",
-	"package": "com.ninni.decibel.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"BlockMixin",
-		"BlocksMixin",
-		"BowItemMixin",
-		"ConcretePowderBlockMixin",
-		"EnderpearlItemMixin",
-		"EntityMixin",
-		"LivingEntityMixin",
-		"PlayerMixin",
-		"ThrownEnderpearlMixin"
-	],
-	"client": [],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ninni.decibel.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BlockMixin",
+    "BlocksMixin",
+    "BowItemMixin",
+    "ConcretePowderBlockMixin",
+    "CreeperMixin",
+    "EnderpearlItemMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "ThrownEnderpearlMixin",
+    "ThrownPotionMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
