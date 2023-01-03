@@ -1509,30 +1509,30 @@
 		],
 		"subtitle": "subtitles.entity.generic.eat"
 	},
-	"item.ender_pearl.land": {
+	"projectile.ender_pearl.land": {
 		"sounds": [
 			{
-				"name": "decibel:item/ender_pearl/land1",
+				"name": "decibel:projectile/ender_pearl/land1",
 				"pitch": 1,
 				"volume": 1
 			},
 			{
-				"name": "decibel:item/ender_pearl/land2",
+				"name": "decibel:projectile/ender_pearl/land2",
 				"pitch": 1,
 				"volume": 1
 			}
 		],
 		"subtitle": "subtitles.entity.ender_pearl.land"
 	},
-	"item.ender_pearl.throw": {
+	"projectile.ender_pearl.throw": {
 		"sounds": [
 			{
-				"name": "decibel:item/ender_pearl/throw1",
+				"name": "decibel:projectile/ender_pearl/throw1",
 				"pitch": 1,
 				"volume": 1
 			},
 			{
-				"name": "decibel:item/ender_pearl/throw2",
+				"name": "decibel:projectile/ender_pearl/throw2",
 				"pitch": 1,
 				"volume": 1
 			}
@@ -1647,45 +1647,45 @@
 			}
 		]
 	},
-	"item.potion.splash": {
+	"projectile.potion.splash": {
 		"sounds": [
-			"decibel:item/potion/splash1",
-			"decibel:item/potion/splash2",
-			"decibel:item/potion/splash3"
+			"decibel:projectile/potion/splash1",
+			"decibel:projectile/potion/splash2",
+			"decibel:projectile/potion/splash3"
 		]
 	},
-	"item.egg.land": {
+	"projectile.egg.land": {
 		"sounds": [
-			"decibel:item/egg/land1",
-			"decibel:item/egg/land2"
+			"decibel:projectile/egg/land1",
+			"decibel:projectile/egg/land2"
 		],
 		"subtitle": "subtitles.decibel.entity.egg.land"
 	},
-	"item.snowball.land": {
+	"projectile.snowball.land": {
 		"sounds": [
-			"decibel:item/snowball/land1",
-			"decibel:item/snowball/land2",
-			"decibel:item/snowball/land3"
+			"decibel:projectile/snowball/land1",
+			"decibel:projectile/snowball/land2",
+			"decibel:projectile/snowball/land3"
 		],
 		"subtitle": "subtitles.decibel.entity.snowball.land"
 	},
-	"item.experience_bottle.splash": {
+	"projectile.experience_bottle.splash": {
 		"sounds": [
 			"decibel:item/potion/splash_exp1",
 			"decibel:item/potion/splash_exp2",
 			"decibel:item/potion/splash_exp3"
 		]
 	},
-	"item.potion.magic": {
+	"projectile.potion.magic": {
 		"sounds": [
-			"decibel:item/potion/magic1",
-			"decibel:item/potion/magic2"
+			"decibel:projectile/potion/magic1",
+			"decibel:projectile/potion/magic2"
 		],
 		"subtitle": "subtitles.decibel.entity.potion.magic"
 	},
-	"item.potion.linger": {
+	"projectile.potion.linger": {
 		"sounds": [
-			"decibel:item/potion/lingering1"
+			"decibel:projectile/potion/lingering1"
 		],
 		"subtitle": "subtitles.decibel.entity.potion.linger"
 	},
