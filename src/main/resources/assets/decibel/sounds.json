@@ -1671,9 +1671,9 @@
 	},
 	"projectile.experience_bottle.splash": {
 		"sounds": [
-			"decibel:item/potion/splash_exp1",
-			"decibel:item/potion/splash_exp2",
-			"decibel:item/potion/splash_exp3"
+			"decibel:projectile/potion/splash_exp1",
+			"decibel:projectile/potion/splash_exp2",
+			"decibel:projectile/potion/splash_exp3"
 		]
 	},
 	"projectile.potion.magic": {
