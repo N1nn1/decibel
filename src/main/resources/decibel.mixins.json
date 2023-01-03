@@ -15,6 +15,7 @@
     "PlayerMixin",
     "SoulFireBlockMixin",
     "ThrownEnderpearlMixin",
+    "ThrownExperienceBottleMixin",
     "ThrownPotionMixin"
   ],
   "client": [],

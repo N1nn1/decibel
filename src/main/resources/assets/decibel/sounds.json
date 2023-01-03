@@ -1668,7 +1668,7 @@
 		],
 		"subtitle": "subtitles.entity.potion.magic"
 	},
-	"item.potion.lingering": {
+	"item.potion.linger": {
 		"sounds": [
 			"decibel:item/potion/lingering1"
 		],
