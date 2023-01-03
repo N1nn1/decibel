@@ -1,0 +1,79 @@
+{
+	"block.nether_wood_door.close": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood_door/close1",
+			"block/nether_wood_door/close2",
+			"block/nether_wood_door/close3"
+		],
+		"subtitle": "subtitles.block.door.toggle"
+	},
+	"block.nether_wood_door.open": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood_door/open1",
+			"block/nether_wood_door/open2"
+		],
+		"subtitle": "subtitles.block.door.toggle"
+	},
+	"block.nether_wood_fence_gate.close": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood_fence/close1",
+			"block/nether_wood_fence/close2"
+		],
+		"subtitle": "subtitles.block.fence_gate.toggle"
+	},
+	"block.nether_wood_fence_gate.open": {
+		"replace": true,
+		"sounds": [
+			"block/nether_wood_fence/open1",
+			"block/nether_wood_fence/open2"
+		],
+		"subtitle": "subtitles.block.fence_gate.toggle"
+	},
+	"block.nether_wood_trapdoor.close": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "block/nether_wood_trapdoor/close1",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/close2",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/close3",
+				"volume": 0.9
+			}
+		],
+		"subtitle": "subtitles.block.trapdoor.toggle"
+	},
+	"block.nether_wood_trapdoor.open": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "block/nether_wood_trapdoor/open1",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/open2",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/open3",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/open4",
+				"volume": 0.9
+			},
+			{
+				"name": "block/nether_wood_trapdoor/open5",
+				"volume": 0.9
+			}
+		],
+		"subtitle": "subtitles.block.trapdoor.toggle"
+	}
+}
