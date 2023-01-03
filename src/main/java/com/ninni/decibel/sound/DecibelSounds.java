@@ -33,6 +33,8 @@ public class DecibelSounds {
 
     public static final SoundEvent ENDER_PEARL_THROW = DecibelSounds.register("item.ender_pearl.throw");
     public static final SoundEvent ENDER_PEARL_LAND = DecibelSounds.register("item.ender_pearl.land");
+    public static final SoundEvent EGG_LAND = DecibelSounds.register("item.egg.land");
+    public static final SoundEvent SNOWBALL_LAND = DecibelSounds.register("item.snowball.land");
 
     public static final SoundEvent POTION_SPLASH = DecibelSounds.register("item.potion.splash");
     public static final SoundEvent POTION_MAGIC = DecibelSounds.register("item.potion.magic");

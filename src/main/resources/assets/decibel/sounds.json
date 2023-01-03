@@ -1654,6 +1654,21 @@
 			"decibel:item/potion/splash3"
 		]
 	},
+	"item.egg.land": {
+		"sounds": [
+			"decibel:item/egg/land1",
+			"decibel:item/egg/land2"
+		],
+		"subtitle": "subtitles.decibel.entity.egg.land"
+	},
+	"item.snowball.land": {
+		"sounds": [
+			"decibel:item/snowball/land1",
+			"decibel:item/snowball/land2",
+			"decibel:item/snowball/land3"
+		],
+		"subtitle": "subtitles.decibel.entity.snowball.land"
+	},
 	"item.experience_bottle.splash": {
 		"sounds": [
 			"decibel:item/potion/splash_exp1",
@@ -1666,13 +1681,13 @@
 			"decibel:item/potion/magic1",
 			"decibel:item/potion/magic2"
 		],
-		"subtitle": "subtitles.entity.potion.magic"
+		"subtitle": "subtitles.decibel.entity.potion.magic"
 	},
 	"item.potion.linger": {
 		"sounds": [
 			"decibel:item/potion/lingering1"
 		],
-		"subtitle": "subtitles.entity.potion.linger"
+		"subtitle": "subtitles.decibel.entity.potion.linger"
 	},
 	"item.shield.use": {
 		"sounds": [

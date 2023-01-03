@@ -18,6 +18,8 @@
     "subtitles.decibel.bow.pull": "Bow charges up",
     "subtitles.decibel.bow.pull_finish": "Bow loads",
     "subtitles.decibel.bow.shoot": "Bow shoots",
+    "subtitles.decibel.entity.egg.land": "Egg cracks",
+    "subtitles.decibel.entity.snowball.land": "Snowball lands",
 	"subtitles.decibel.entity.potion.magic": "Magic emanates",
 	"subtitles.decibel.entity.potion.linger": "Magic lingers",
     "subtitles.decibel.shield.use": "Shield is raised"

@@ -13,7 +13,9 @@
     "EntityMixin",
     "LivingEntityMixin",
     "PlayerMixin",
+    "SnowballMixin",
     "SoulFireBlockMixin",
+    "ThrownEggMixin",
     "ThrownEnderpearlMixin",
     "ThrownExperienceBottleMixin",
     "ThrownPotionMixin"
