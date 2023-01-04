@@ -75,5 +75,25 @@
 			}
 		],
 		"subtitle": "subtitles.block.trapdoor.toggle"
+	},
+	"entity.arrow.hit": {
+		"replace": true,
+		"sounds": [
+			"decibel:projectile/arrow/bow/land1",
+			"decibel:projectile/arrow/bow/land2",
+			"decibel:projectile/arrow/bow/land3",
+			"decibel:projectile/arrow/bow/land4"
+		],
+		"subtitle": "subtitles.entity.arrow.hit"
+	},
+	"item.crossbow.hit": {
+		"replace": true,
+		"sounds": [
+			"decibel:projectile/arrow/crossbow/land1",
+			"decibel:projectile/arrow/crossbow/land2",
+			"decibel:projectile/arrow/crossbow/land3",
+			"decibel:projectile/arrow/crossbow/land4"
+		],
+		"subtitle": "subtitles.item.crossbow.hit"
 	}
 }
