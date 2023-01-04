@@ -1,5 +1,6 @@
 package com.ninni.decibel.mixin;
 
+import net.minecraft.world.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -35,6 +36,9 @@ public abstract class BowItemMixin extends Item {
             if (useTime == 18) {
                 var soundEvent = DecibelUtil.hasFlame(stack) ? DecibelSounds.BOW_PULL_FINISH_FLAME : DecibelSounds.BOW_PULL_FINISH;
                 world.playSound(null, user.getX(), user.getY(), user.getZ(), soundEvent, SoundSource.PLAYERS, 1, 1);
+                if (user.getProjectile(stack).is(Items.TIPPED_ARROW)) {
+                    world.playSound(null, user.getX(), user.getY(), user.getZ(), DecibelSounds.BOW_PULL_FINISH_TIPPED, SoundSource.PLAYERS, 1, 1);
+                }
             }
         }
     }
@@ -57,5 +61,6 @@ public abstract class BowItemMixin extends Item {
         } else {
             return DecibelSounds.BOW_SHOOT;
         }
+        // tipped shoot sound would go here; have it play in addition to the others
     }
 }

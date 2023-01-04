@@ -20,8 +20,11 @@ public class DecibelSounds {
     public static final SoundEvent BOW_PULL_FLAME = DecibelSounds.register("item.bow.pull_flame");
     public static final SoundEvent BOW_PULL_FINISH = DecibelSounds.register("item.bow.pull_finish");
     public static final SoundEvent BOW_PULL_FINISH_FLAME = DecibelSounds.register("item.bow.pull_finish_flame");
+
+    public static final SoundEvent BOW_PULL_FINISH_TIPPED = DecibelSounds.register("item.bow.pull_finish_tipped");
     public static final SoundEvent BOW_SHOOT = DecibelSounds.register("item.bow.shoot");
     public static final SoundEvent BOW_SHOOT_FLAME = DecibelSounds.register("item.bow.shoot_flame");
+    public static final SoundEvent BOW_SHOOT_TIPPED = DecibelSounds.register("item.bow.shoot_tipped");
 
     public static final SoundEvent METAL_SWORD_SWING = DecibelSounds.register("item.metal_sword.swing");
     public static final SoundEvent METAL_PICKAXE_SWING = DecibelSounds.register("item.metal_pickaxe.swing");

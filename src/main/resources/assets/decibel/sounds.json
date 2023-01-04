@@ -1426,6 +1426,20 @@
 		],
 		"subtitle": "subtitles.decibel.bow.pull_finish"
 	},
+	"item.bow.pull_finish_tipped": {
+		"sounds": [
+			{
+				"name": "decibel:item/bow/pull_finish_tipped1",
+				"pitch": 1.1,
+				"volume": 0.8
+			},
+			{
+				"name": "decibel:item/bow/pull_finish_tipped2",
+				"pitch": 1.1,
+				"volume": 0.8
+			}
+		]
+	},
 	"item.bow.pull_flame": {
 		"sounds": [
 			{
@@ -1474,6 +1488,25 @@
 			}
 		],
 		"subtitle": "subtitles.decibel.bow.shoot"
+	},
+	"item.bow.shoot_tipped": {
+		"sounds": [
+			{
+				"name": "decibel:item/bow/shoot_tipped1",
+				"pitch": 0.9,
+				"volume": 0.8
+			},
+			{
+				"name": "decibel:item/bow/shoot_tipped2",
+				"pitch": 0.9,
+				"volume": 0.8
+			},
+			{
+				"name": "decibel:item/bow/shoot_tipped3",
+				"pitch": 0.9,
+				"volume": 0.8
+			}
+		]
 	},
 	"item.bread.eat": {
 		"sounds": [
